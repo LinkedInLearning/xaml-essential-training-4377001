@@ -15,7 +15,7 @@
 
     <TextBox TextChanged='TextBox_TextChanged' />
 
-		<TextBox>
+		<TextBox Width="200">
 			<TextBox.Text >
 				Property Elements look like .NET class members
 			</TextBox.Text>
