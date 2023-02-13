@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleWpf", "SimpleWpf\Simp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleWinUi", "SimpleWinUi\SimpleWinUi.csproj", "{55003EAA-E7C8-4177-945A-679BDB3A103F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleUwa", "SimpleUwa\SimpleUwa.csproj", "{92866E34-4CB6-419F-8791-7EFD1A972790}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleUwp", "SimpleUwa\SimpleUwp.csproj", "{92866E34-4CB6-419F-8791-7EFD1A972790}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
