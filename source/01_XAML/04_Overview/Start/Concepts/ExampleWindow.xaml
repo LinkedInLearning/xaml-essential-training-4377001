@@ -13,6 +13,8 @@
       <Image />
     </Button>
 
+		<Slider Minimum="0" Maximum="100" TickFrequency="5"/>
+		<!-- Event Attribute -->
     <TextBox TextChanged='TextBox_TextChanged' />
 
 		<TextBox Width="200">
@@ -27,7 +29,7 @@
     <CheckBox Content='More Content' />
     
    
-    
+  
    
     
     <TextBlock Text='{Binding TourName}' />
