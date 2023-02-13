@@ -1,6 +1,9 @@
 ﻿<Window xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
         xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'
-        xmlns:mycustom='http://mydomain.com/ourspec'>
+        xmlns:mycustom='http://mydomain.com/ourspec'
+				x:Class="Concepts.ExampleWindow">
+
+	<!-- Object elements-->
   <Grid>
     <Button Width='20'
             Height='5.125' /> 
@@ -12,19 +15,20 @@
 
     <TextBox TextChanged='TextBox_TextChanged' />
 
-  
-    <CheckBox> The content </CheckBox>
+		<TextBox>
+			<TextBox.Text >
+				Property Elements look like .NET class members
+			</TextBox.Text>
+			<TextBox.FontWeight>Bold</TextBox.FontWeight>
+		</TextBox>
+
+		<CheckBox> The content </CheckBox>
     <!--<Rectangle> The content </Rectangle>-->
     <CheckBox Content='More Content' />
     
    
     
-    <TextBox>
-      <TextBox.Text >
-        Property Elements look like .NET class members
-      </TextBox.Text>
-      <TextBox.FontWeight>Bold</TextBox.FontWeight>
-    </TextBox>
+   
     
     <TextBlock Text='{Binding TourName}' />
     <TextBlock Grid.Column='1'
