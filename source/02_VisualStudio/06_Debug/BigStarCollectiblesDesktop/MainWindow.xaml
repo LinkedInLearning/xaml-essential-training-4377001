@@ -1,0 +1,144 @@
+﻿<Window x:Class="BigStarCollectiblesDesktop.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:BigStarCollectiblesDesktop"
+				mc:Ignorable="d"
+				Title="MainWindow"
+				Height="450"
+				Width="800" WindowState='Maximized'
+				FontSize='22'>
+	<TabControl>
+
+		<TabItem Header='Aliens'>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width='9*' />
+					<ColumnDefinition Width='1*' />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height='Auto' />
+					<RowDefinition Height='*' />
+				</Grid.RowDefinitions>
+
+				<TextBlock Text='The Stargazers Aliens Cards' />
+
+				<ListBox x:Name='AlienListBox'
+								 ItemsSource='{Binding}'
+								 ScrollViewer.HorizontalScrollBarVisibility='Disabled'
+								 Grid.Row='1'>
+
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<Border BorderBrush='LightCoral'
+											BorderThickness='1'>
+								<StackPanel Orientation='Vertical'
+														Margin='10'
+														Background='MintCream'>
+									<TextBlock FontSize='16'
+														 HorizontalAlignment='Right'
+														 Foreground='DarkGray'
+														 Text='{Binding PopularityIndex, StringFormat={}Rank: {0}}'>
+
+									</TextBlock>
+									<Grid>
+										
+										<Image Height='240'
+													 Width='240' 
+													 Stretch='Uniform'
+													 Source='{Binding ImageUri}'
+													 HorizontalAlignment='Center' Margin='0,20,0,0'/>
+									</Grid>
+									<TextBlock Text='{Binding Name}' FontWeight='Bold' Foreground='Green'
+														 HorizontalAlignment='Center' />
+									<TextBlock Text='{Binding Slogan}'
+														 HorizontalAlignment='Center' />
+
+									<TextBlock Text='{Binding ShortDescription}'
+														 HorizontalAlignment='Center'
+														 FontStyle='Italic' TextWrapping='Wrap' Width='240' Margin='0,12,0,0'/>
+									<Button Content='Buy Card...'  Margin='5'/>
+								</StackPanel>
+							</Border>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+					<ListBox.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel IsItemsHost='True'
+												 Orientation='Horizontal' />
+						</ItemsPanelTemplate>
+					</ListBox.ItemsPanel>
+				</ListBox>
+
+			</Grid>
+		</TabItem>
+		<TabItem Header='Monsters'>
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width='9*' />
+					<ColumnDefinition Width='1*' />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height='Auto' />
+					<RowDefinition Height='*' />
+				</Grid.RowDefinitions>
+
+				<TextBlock Text="The LiL' Monsters Cards" />
+
+				<ListBox x:Name='MonsterListBox'
+								 ItemsSource='{Binding}'
+								 ScrollViewer.HorizontalScrollBarVisibility='Disabled'
+								 Grid.Row='1'>
+
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<Border BorderBrush='LightCoral'
+											BorderThickness='1' VerticalAlignment='Top'>
+								<StackPanel Orientation='Vertical'
+														Margin='10'
+														Background='MintCream'>
+
+									<Grid>
+										<TextBlock FontSize='16'  Foreground='DarkGray' Text='{Binding PopularityIndex, StringFormat={}Rank: {0}}'>
+									
+										
+										</TextBlock>
+										<Image Height='240'
+													 Width='240'
+													 Stretch='Uniform'
+													 Source='{Binding ImageUri}'
+													 HorizontalAlignment='Center' />
+									</Grid>
+									<TextBlock Text='{Binding Name}'
+														 FontWeight='Bold'
+														 Foreground='DarkRed'
+														 HorizontalAlignment='Center' />
+									<TextBlock Text='{Binding Slogan}'
+														 HorizontalAlignment='Center' />
+
+									<TextBlock Text='{Binding ShortDescription}'
+														 HorizontalAlignment='Center'
+														 FontStyle='Italic'
+														 TextWrapping='Wrap'
+														 Width='240'
+														 Margin='0,12,0,0' />
+									<Button Content='Buy Card...'
+													Margin='5' />
+								</StackPanel>
+							</Border>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+					<ListBox.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel IsItemsHost='True'
+												 Orientation='Horizontal' />
+						</ItemsPanelTemplate>
+					</ListBox.ItemsPanel>
+				</ListBox>
+
+			</Grid>
+		</TabItem>
+		<TabItem Header='About' />
+	</TabControl>
+</Window>

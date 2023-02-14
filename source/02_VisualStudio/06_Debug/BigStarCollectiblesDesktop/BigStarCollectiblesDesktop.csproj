@@ -1,0 +1,252 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Alien-CelestiaDristi-md.png" />
+    <None Remove="Images\Alien-Charmaine-md.png" />
+    <None Remove="Images\Alien-Dr. Portman-md.png" />
+    <None Remove="Images\Alien-Gill-md.png" />
+    <None Remove="Images\Alien-Ichabod-md.png" />
+    <None Remove="Images\Alien-Laverne-md.png" />
+    <None Remove="Images\Alien-Mindigo-md.png" />
+    <None Remove="Images\Alien-Nalda-md.png" />
+    <None Remove="Images\Alien-Narf-the-Fourth-md.png" />
+    <None Remove="Images\Alien-Seymour-md.png" />
+    <None Remove="Images\Alien-Tomolor-md.png" />
+    <None Remove="Images\Alien-Trisaphron-md.png" />
+    <None Remove="Images\Alien-Two-md.png" />
+    <None Remove="Images\Alien-Violette-md.png" />
+    <None Remove="Images\Aliens-Group.png" />
+    <None Remove="Images\BSC_Horizontal_Violet-Gold.png" />
+    <None Remove="Images\BSC_Horizontal_Violet.png" />
+    <None Remove="Images\Card-Monster-Blade-Back.png" />
+    <None Remove="Images\Card-Monster-Blade-Front.png" />
+    <None Remove="Images\Card-Monster-Melville-Back.png" />
+    <None Remove="Images\Card-Monster-Melville-Front.png" />
+    <None Remove="Images\Card-Monster-Mingle-Back.png" />
+    <None Remove="Images\Card-Monster-Mingle-Front.png" />
+    <None Remove="Images\Card-Monster-Yodel-Back.png" />
+    <None Remove="Images\Card-Monster-Yodel-Front.png" />
+    <None Remove="Images\Card-Stargazers-Charmaine-Back.png" />
+    <None Remove="Images\Card-Stargazers-Charmaine-Front.png" />
+    <None Remove="Images\Card-Stargazers-Gill-Back.png" />
+    <None Remove="Images\Card-Stargazers-Gill-Front.png" />
+    <None Remove="Images\Card-Stargazers-Mindigo-Back.png" />
+    <None Remove="Images\Card-Stargazers-Mindigo-Front.png" />
+    <None Remove="Images\Card-Stargazers-Trisaphron-Back.png" />
+    <None Remove="Images\Card-Stargazers-Trisaphron-Front.png" />
+    <None Remove="Images\Monster-Blade-card.png" />
+    <None Remove="Images\Monster-Blade-md.png" />
+    <None Remove="Images\Monster-Drift-card.png" />
+    <None Remove="Images\Monster-Drift-md.png" />
+    <None Remove="Images\Monster-Filo-card.png" />
+    <None Remove="Images\Monster-Filo-md.png" />
+    <None Remove="Images\Monster-Frex-card.png" />
+    <None Remove="Images\Monster-Frex-md.png" />
+    <None Remove="Images\Monster-Group.png" />
+    <None Remove="Images\Monster-Melville-card.png" />
+    <None Remove="Images\Monster-Melville-md.png" />
+    <None Remove="Images\Monster-Mingle-card.png" />
+    <None Remove="Images\Monster-Mingle-md.png" />
+    <None Remove="Images\Monster-Skedaddle-card.png" />
+    <None Remove="Images\Monster-Skedaddle-md.png" />
+    <None Remove="Images\Monster-Smiley-card.png" />
+    <None Remove="Images\Monster-Smiley-md.png" />
+    <None Remove="Images\Monster-Spook-card.png" />
+    <None Remove="Images\Monster-Spook-md.png" />
+    <None Remove="Images\Monster-Squido-card.png" />
+    <None Remove="Images\Monster-Squido-md.png" />
+    <None Remove="Images\Monster-Timber-card.png" />
+    <None Remove="Images\Monster-Timber-md.png" />
+    <None Remove="Images\Monster-Yodel-card.png" />
+    <None Remove="Images\Monster-Yodel-md.png" />
+    <None Remove="Images\monsterLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Alien-CelestiaDristi-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Charmaine-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Dr. Portman-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Gill-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Ichabod-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Laverne-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Mindigo-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Nalda-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Narf-the-Fourth-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Seymour-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Tomolor-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Trisaphron-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Two-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Alien-Violette-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Aliens-Group.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\BSC_Horizontal_Violet-Gold.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\BSC_Horizontal_Violet.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Blade-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Blade-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Melville-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Melville-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Mingle-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Mingle-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Yodel-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Monster-Yodel-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Charmaine-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Charmaine-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Gill-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Gill-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Mindigo-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Mindigo-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Trisaphron-Back.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Card-Stargazers-Trisaphron-Front.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Blade-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Blade-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Drift-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Drift-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Filo-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Filo-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Frex-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Frex-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Group.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Melville-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Melville-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Mingle-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Mingle-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Skedaddle-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Skedaddle-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Smiley-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Smiley-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Spook-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Spook-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Squido-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Squido-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Timber-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Timber-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Yodel-card.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Monster-Yodel-md.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\monsterLogo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
