@@ -1,0 +1,9 @@
+﻿System.Windows
+System.Windows.Controls
+System.Windows.Data
+System.Windows.Documents
+System.Windows.Ink
+System.Windows.Shapes
+System.Windows.Media 
+System.Media.Animation
+Another 10+ namespaces

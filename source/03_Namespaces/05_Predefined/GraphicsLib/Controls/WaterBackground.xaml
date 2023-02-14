@@ -1,0 +1,186 @@
+﻿<UserControl x:Class="BigStar.Lib.Graphics.WaterBackground"
+						 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+						 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+						
+						 mc:Ignorable="d"
+						 d:DesignHeight="300"
+						 d:DesignWidth="300">
+	<UserControl.Resources>
+		<LinearGradientBrush x:Key="PrimaryWaterBrush"
+												 StartPoint="0.607661,0.73241"
+												 EndPoint="0.607661,-0.20309">
+			<GradientStop Color="#FF3F3FB7"
+										Offset="0" />
+			<GradientStop Color="#FF4FD6DE"
+										Offset="0.773" />
+		</LinearGradientBrush>
+		<LinearGradientBrush x:Key="VeggieBrush"
+												 StartPoint="7.94728e-008,0.621306"
+												 EndPoint="0.871,0.837">
+			<GradientStop Color="#7318DD46"
+										Offset="0" />
+			<GradientStop Color="#8F186F19"
+										Offset="0.979" />
+			<GradientStop Color="#82B5D44D"
+										Offset="0.274" />
+			<GradientStop Color="#6B52CF6C"
+										Offset="0.587" />
+		</LinearGradientBrush>
+	</UserControl.Resources>
+	<Grid  Height="530"
+				 Width="1044">
+		<Grid.Clip>
+			<RectangleGeometry Rect="0,0,1044,530" />
+		</Grid.Clip>
+		<Rectangle Stretch="Fill"
+							 HorizontalAlignment="Left"
+							 VerticalAlignment="Top"
+							 Fill="{StaticResource PrimaryWaterBrush}"
+							 StrokeThickness="0"
+							 Height="530"
+							 Width="1044" />
+		<Path Stretch="Fill"
+					Data="F1 M 0,0L 1024,0L 1024,464.996C 854.733,406.499 746.738,372.001 536.749,238.507C 326.759,105.014 157.268,90.0147 0,124.513L 0,0 Z "
+					HorizontalAlignment="Stretch"
+					VerticalAlignment="Stretch"
+					Margin="0,0,12,21">
+			<Path.Fill>
+				<LinearGradientBrush StartPoint="0,0.688702"
+														 EndPoint="1,0.688702">
+					<GradientStop Color="#33FCFFFF"
+												Offset="0" />
+					<GradientStop Color="#1DFFFFFF"
+												Offset="0.776256" />
+				</LinearGradientBrush>
+			</Path.Fill>
+		</Path>
+		<Path Stretch="Fill"
+					Data="F1 M 0,684.985L 0,410.499C 373.257,180.01 1024,475.5 1024,475.5L 1024,518.998C 35.7738,367.501 8.13802e-005,686.485 0,684.985 Z "
+					HorizontalAlignment="Stretch"
+					RenderTransformOrigin="0.5,0.5"
+					Margin="-133.26,-4.376,12.74,143.068">
+			<Path.Fill>
+				<LinearGradientBrush StartPoint="7.94728e-008,0.621306"
+														 EndPoint="7.94728e-008,0.621306">
+					<GradientStop Color="#1AFCFFFF"
+												Offset="0" />
+					<GradientStop Color="#1DFFFFFF"
+												Offset="0.776256" />
+				</LinearGradientBrush>
+			</Path.Fill>
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform Angle="-3.369" />
+					<TranslateTransform />
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path Stretch="Fill"
+					Data="F1 M 0,684.985L 0,410.499C 373.257,180.01 1024,475.5 1024,475.5L 1024,518.998C 35.7738,367.501 8.13802e-005,686.485 0,684.985 Z "
+					VerticalAlignment="Stretch"
+					RenderTransformOrigin="0.5,0.5"
+					d:LayoutOverrides="VerticalAlignment"
+					Margin="76,150,-56,18">
+			<Path.Fill>
+				<LinearGradientBrush StartPoint="7.94728e-008,0.621306"
+														 EndPoint="7.94728e-008,0.621306">
+					<GradientStop Color="#1AFCFFFF"
+												Offset="0" />
+					<GradientStop Color="#1DFFFFFF"
+												Offset="0.776256" />
+				</LinearGradientBrush>
+			</Path.Fill>
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform Angle="310" />
+					<TranslateTransform />
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path Stretch="Fill"
+					Width="182.876"
+					Data="M189.4375,868.65625 C-95.5625,307.65625 75.436996,-145.34351 75.436996,-145.34351 L93.436852,-115.34326 C93.436852,-115.34326 108.43687,16.656704 93.436852,40.656696 C78.436829,64.656693 45.436779,100.65668 45.436779,151.65668 C45.436779,202.65666 57.436794,265.65665 75.436821,310.65665 C93.436852,355.65665 150.43694,553.65656 150.43694,553.65656 L144.43692,604.65656 C144.43692,604.65656 156.43695,751.65656 168.43697,766.65656 C180.43698,781.65656 207.43703,826.65649 207.43703,826.65649 z"
+					HorizontalAlignment="Left"
+					Margin="48.562,-79.344,0,-404.656">
+			<Path.Fill>
+				<LinearGradientBrush EndPoint="0.588,0.621"
+														 StartPoint="7.94727981201504E-08,0.621306002140045">
+					<GradientStop Color="#7318DD46"
+												Offset="0" />
+					<GradientStop Color="#8F186F19"
+												Offset="0.979" />
+					<GradientStop Color="#82B5D44D"
+												Offset="0.274" />
+					<GradientStop Color="#6B52CF6C"
+												Offset="0.587" />
+				</LinearGradientBrush>
+			</Path.Fill>
+		</Path>
+		<Path Stretch="Fill"
+					Data="M189.4375,868.65625 C-95.5625,307.65625 75.436996,-145.34351 75.436996,-145.34351 L93.436852,-115.34326 C93.436852,-115.34326 108.43687,16.656704 93.436852,40.656696 C78.436829,64.656693 45.436779,100.65668 45.436779,151.65668 C45.436779,202.65666 57.436794,265.65665 75.436821,310.65665 C93.436852,355.65665 150.43694,553.65656 150.43694,553.65656 L144.43692,604.65656 C144.43692,604.65656 156.43695,751.65656 168.43697,766.65656 C180.43698,781.65656 207.43703,826.65649 207.43703,826.65649 z"
+					RenderTransformOrigin="0.5,0.5"
+					Margin="521.177,150,339.947,-634">
+			<Path.Fill>
+				<LinearGradientBrush EndPoint="0.870999991893768,0.837000012397766"
+														 StartPoint="0.966,0.157">
+					<GradientStop Color="#7318DD46"
+												Offset="0" />
+					<GradientStop Color="#8F186F19"
+												Offset="0.979" />
+					<GradientStop Color="#82B5D44D"
+												Offset="0.274" />
+					<GradientStop Color="#6B52CF6C"
+												Offset="0.587" />
+				</LinearGradientBrush>
+			</Path.Fill>
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1" />
+					<SkewTransform AngleX="0"
+												 AngleY="0" />
+					<RotateTransform Angle="-18.303" />
+					<TranslateTransform />
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path Stretch="Fill"
+					Width="60.707"
+					Data="M264.4375,799.65625 C237.4375,754.65625 243.43701,757.65649 237.43701,739.65649 C231.43701,721.65649 192.4357,694.65692 210.43602,658.65704 C228.43634,622.65717 246.43672,556.65784 246.43672,556.65784 C246.43672,556.65784 282.43729,526.65826 273.43713,553.65814 C264.43701,580.65796 267.43701,577.65839 255.43683,601.6582 C243.43665,625.65802 231.43648,670.65759 231.43648,670.65759 L252.4368,703.65729 L261.43692,673.65759 C261.43692,673.65759 282.43723,643.65784 294.43741,631.6579 C306.43759,619.65802 333.43726,598.6582 333.43726,610.65808 C333.43726,622.65796 327.43768,640.65784 318.43756,652.65771 C309.43744,664.65759 276.43701,691.65741 276.43701,691.65741 L279.43704,736.65704 L294.43726,775.65668 z"
+					Height="155.269"
+					Fill="{StaticResource VeggieBrush}"
+					RenderTransformOrigin="0.5,0.5"
+					HorizontalAlignment="Left"
+					Margin="376.437,0,0,-54.269"
+					VerticalAlignment="Bottom">
+			<Path.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1" />
+					<SkewTransform AngleX="0"
+												 AngleY="0" />
+					<RotateTransform Angle="0" />
+					<TranslateTransform />
+				</TransformGroup>
+			</Path.RenderTransform>
+		</Path>
+		<Path Stretch="Fill"
+					Width="127.707"
+					Data="M264.4375,799.65625 C237.4375,754.65625 243.43701,757.65649 237.43701,739.65649 C231.43701,721.65649 192.4357,694.65692 210.43602,658.65704 C228.43634,622.65717 246.43672,556.65784 246.43672,556.65784 C246.43672,556.65784 282.43729,526.65826 273.43713,553.65814 C264.43701,580.65796 267.43701,577.65839 255.43683,601.6582 C243.43665,625.65802 231.43648,670.65759 231.43648,670.65759 L252.4368,703.65729 L261.43692,673.65759 C261.43692,673.65759 282.43723,643.65784 294.43741,631.6579 C306.43759,619.65802 333.43726,598.6582 333.43726,610.65808 C333.43726,622.65796 327.43768,640.65784 318.43756,652.65771 C309.43744,664.65759 276.43701,691.65741 276.43701,691.65741 L279.43704,736.65704 L294.43726,775.65668 z"
+					Height="257.269"
+					Fill="{StaticResource VeggieBrush}"
+					HorizontalAlignment="Left"
+					Margin="152.73,0,0,-39.269"
+					VerticalAlignment="Bottom" />
+		<Path Fill="{StaticResource VeggieBrush}"
+					Stretch="Fill"
+					Height="186"
+					Data="M418,493.79166 C417,467.79166 413,462.79132 414,451.79132 C415,440.79132 400.99936,430.79083 400.99936,430.79083 L408.99966,412.79028 L384.99875,402.78979 L365.99805,386.78912 L377.9985,369.78839 L393.99911,360.78784 L396.99921,377.78799 L387.99887,383.78818 L405.99957,388.78833 C405.99957,388.78833 419.00006,387.7883 415.99994,381.78812 C412.99982,375.78793 407.99963,352.78729 404.99951,337.78687 C401.99939,322.78644 400.99936,307.78561 400.99936,307.78561 C400.99936,307.78561 418,324.78583 418,329.78598 C418,334.78613 424.00024,400.7883 424.00024,400.7883 C424.00024,400.7883 424.00024,419.78891 421.00012,424.78909 C418,429.78925 427.00034,443.7897 427.00034,443.7897 L443.57336,429.0582 L454.00134,419.78891 L436.00067,450.78992 L435.00064,469.79053 L446.00104,487.79114 L430.00043,488.79117 z"
+					Margin="502,0,454,-23.269"
+					VerticalAlignment="Bottom" />
+	</Grid>
+</UserControl>

@@ -1,0 +1,23 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d='http://schemas.microsoft.com/expression/blend/2008'
+        xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006'
+        mc:Ignorable='d'
+        x:Class="UnderstandNamespaces.MainNamespace"
+        d:DesignWidth='842.077'
+        d:DesignHeight='545.288'>
+  <Window.Resources>
+    <DoubleAnimationUsingKeyFrames x:Key='moveAnimation' />
+  </Window.Resources>
+  <Grid>
+
+    <TextBlock Text='Tailor-made Tours' />
+    <TextBlock Text='{Binding TourName}' />
+    <Button Content='Start'
+            Width='200'
+            Height='Auto' />
+    <Rectangle Height='2'
+               Fill='Orange' />
+
+  </Grid>
+</Window>

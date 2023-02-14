@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+					 elementFormDefault="qualified" 
+					 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					
+					 targetNamespace="http://schemas.demo.com/controls"
+					 >
+	<!-- A Namespace is a container for named items.
+	     All the named items in the namespace must be unique 
+			 Each namespace has a unique name (URI)
+-->
+	<xs:element name="Demo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:any maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="StackPanel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:any maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Button" >
+		<xs:complexType>
+			<xs:attribute name="Width" type="xs:double"  />
+			<xs:attribute name="Height" type="xs:double"  />
+			<xs:attribute name="Background" type="xs:string"  />
+
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Checkbox" >
+		<xs:complexType>
+			<xs:attribute name="Width" type="xs:double"  />
+			<xs:attribute name="Height" type="xs:double"  />
+			<xs:attribute name="IsChecked" type="xs:boolean"  />
+
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Slider" >
+		<xs:complexType>
+			<xs:attribute name="Minimum" type="xs:double"  />
+			<xs:attribute name="Maximum" type="xs:double"  />
+			<xs:attribute name="TickFrequency" type="xs:double"  />
+
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

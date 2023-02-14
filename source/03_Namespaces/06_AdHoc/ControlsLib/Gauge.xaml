@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="BigStar.Lib.Controls.Gauge"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            
+             mc:Ignorable="d"
+						 d:DesignHeight="300"
+						 d:DesignWidth="400"
+						 Width="200"
+						 Height="200"
+						 IsHitTestVisible="False"
+						 x:Name='Root'>
+	<Grid DataContext="{Binding ElementName=root}"
+				RenderTransformOrigin=".5,.5">
+		<Grid.RenderTransform>
+			<RotateTransform x:Name='GridTransform' />
+
+		</Grid.RenderTransform>
+
+		<Image  Source='Assets/GaugeBack.png' />
+		<Grid Margin="1">
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+
+			<Image Source='Assets/GaugeHand.png'
+						 Grid.ColumnSpan='2'
+						 HorizontalAlignment="Center"
+						 VerticalAlignment="Stretch"
+						 Margin='92,10,91,94'
+						 Grid.RowSpan='2'>
+
+			</Image>
+
+		</Grid>
+	</Grid>
+</UserControl>
