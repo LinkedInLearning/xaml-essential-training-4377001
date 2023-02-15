@@ -4,7 +4,7 @@
   <Window.Resources>
     <DoubleAnimationUsingKeyFrames x:Key='moveAnimation' />
 
-		<GradientBrush x:Key='SunsetBrush' />
+		<RadialGradientBrush x:Key='SunsetBrush' />
 	</Window.Resources>
   <Grid>
 
