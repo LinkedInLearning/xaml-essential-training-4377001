@@ -60,6 +60,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Explained.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainNamespace.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +78,9 @@
     </Compile>
     <Compile Include="DefaultWindow.xaml.cs">
       <DependentUpon>DefaultWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Explained.xaml.cs">
+      <DependentUpon>Explained.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainNamespace.xaml.cs">
       <DependentUpon>MainNamespace.xaml</DependentUpon>
