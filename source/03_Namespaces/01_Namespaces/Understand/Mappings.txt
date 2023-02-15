@@ -1,9 +1,14 @@
-﻿System.Windows
+﻿Default XAML namespace
+The primary assemblies (PresentationCore, PresentationFramework)
+
+System.Windows
 System.Windows.Controls
 System.Windows.Data
 System.Windows.Documents
 System.Windows.Ink
+System.Windows.Input
 System.Windows.Shapes
 System.Windows.Media 
-System.Media.Animation
+System.Windows.Media.Animation
+
 Another 10+ namespaces
