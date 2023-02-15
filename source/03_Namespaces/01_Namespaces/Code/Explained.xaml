@@ -10,7 +10,7 @@
 				xmlns:local ="clr-namespace:UnderstandNamespaces">
 
 		
-		<!-- Add other predefined namespace  -->
+		<!-- Add other predefined namespaces  -->
 		<Grid 
 				xmlns:controls='http://bigstarcollectibles.com/bigstarlib'
 				xmlns:vendor  ='http://schema.vendor.com/panels' />

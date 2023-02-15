@@ -3,16 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <Window.Resources>
     <DoubleAnimationUsingKeyFrames x:Key='moveAnimation' />
-  </Window.Resources>
+
+		<GradientBrush x:Key='SunsetBrush' />
+	</Window.Resources>
   <Grid>
 
-    <TextBlock Text='Tailor-made Tours' />
+    <TextBlock Text='Tailor-made Tours' 
+							 FontStretch='Expanded'/>
     <TextBlock Text='{Binding TourName}' />
     <Button Content='Start'
             Width='200'
             Height='Auto'></Button>
     <Rectangle Height='2'
                Fill='Orange' />
-    
+ 
   </Grid>
 </Window>
