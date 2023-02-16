@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow"
         Height="700"
-        Width="700">
+        Width="700" FontSize='20'>
 
 	<StackPanel Margin='30,10'>
 		<Button x:Name='InXamlButton'

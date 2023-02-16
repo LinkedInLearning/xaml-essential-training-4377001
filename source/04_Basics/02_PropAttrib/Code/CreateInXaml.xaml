@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:PropertyAttributes"
         mc:Ignorable="d"
 				Title="CreateInXaml"
-				Height="350"
+				Height="400"
 				Width="400">
 	<StackPanel>
 		<Rectangle Fill='Orange'
