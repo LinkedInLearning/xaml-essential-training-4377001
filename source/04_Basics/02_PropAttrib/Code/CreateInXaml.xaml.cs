@@ -10,24 +10,15 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace PropertyAttributes {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for CreateInXaml.xaml
 	/// </summary>
-	public partial class MainWindow : Window {
-		public MainWindow() {
+	public partial class CreateInXaml : Window {
+		public CreateInXaml() {
 			InitializeComponent();
-		}
-
-		private void InCodeButton_Click(object sender, RoutedEventArgs e) {
-			(new CreateInCode()).Show();
-		}
-
-		private void InXamlButton_Click(object sender, RoutedEventArgs e) {
-			(new CreateInXaml()).Show();
 		}
 	}
 }

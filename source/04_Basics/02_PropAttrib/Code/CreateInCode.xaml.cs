@@ -13,9 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace PropertyAttributes {
-  /// <summary>
-  /// Interaction logic for CreateInCode.xaml
-  /// </summary>
   public partial class CreateInCode : Window {
     public CreateInCode() {
       InitializeComponent();
@@ -41,9 +38,9 @@ namespace PropertyAttributes {
       elip.Fill = new SolidColorBrush(Colors.Goldenrod);
       elip.Opacity = .7;
 
-      // rect.Margin = "20,10,20,-10"; // this won't work
+      // elip.Margin = "20,10,20,-10"; // this won't work
 
-      rect.Margin = new Thickness(20,10,20,-10);
+      elip.Margin = new Thickness(20,-40,20,20);
     }
   }
 }
