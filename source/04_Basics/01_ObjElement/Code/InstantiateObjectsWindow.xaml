@@ -19,13 +19,9 @@
 		<!-- Some UIElements 
 			   cannot have child UIElement 
 			<Image /> 
-			-->			
-	
+			-->
 
 		<DockPanel.Resources />
-
-
-	
 	</DockPanel>
 	<Window.Resources>
 		<!--  2. Within a resource dictionary 
