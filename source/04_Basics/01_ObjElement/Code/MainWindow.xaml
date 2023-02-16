@@ -1,0 +1,19 @@
+﻿<Window x:Class="ObjectElements.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObjectElements"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+	
+    <StackPanel>
+		<Rectangle Fill='Orange'
+							 Height='90'
+							 Width='60' Margin='20,10,20,-20'/>
+		<Ellipse Fill='Purple'
+						 Width='200'
+						 Height='160' Opacity='.7'/>
+			
+	</StackPanel>
+</Window>
