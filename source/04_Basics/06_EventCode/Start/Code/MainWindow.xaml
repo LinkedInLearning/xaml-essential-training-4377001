@@ -1,0 +1,29 @@
+﻿<Window x:Class="PropertyAttributes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow"
+        Height="350"
+        Width="400">
+  <StackPanel>
+    <TextBlock Text='Tailor-Made Tours'
+               FontSize='36'
+               ToolTip='Some Text'
+               x:Name='TitleTextBlock'
+                ToolTipOpening='TitleTextBlock_ToolTipOpening'
+                />
+    <TextBox TextChanged='TextBox_TextChanged' /> 
+    <ListBox x:Name='TourListBox' SelectionChanged='TourListBox_SelectionChanged'>
+      <ListBoxItem>Chicago</ListBoxItem>
+      <ListBoxItem>Barcelona</ListBoxItem>
+      <ListBoxItem>Singapore</ListBoxItem>
+
+    </ListBox>
+    <Button Content='Choose Tour' Click='Button_Click'/>
+    <Button Content='Save Tour' Click='Button_Click' />
+    <Rectangle Width='40'
+               Height='40'
+               Fill='Orange'
+               Margin='10' MouseMove='Rectangle_MouseMove' />
+    <TextBlock x:Name='MessageTextBlock' />
+  </StackPanel>
+</Window>
