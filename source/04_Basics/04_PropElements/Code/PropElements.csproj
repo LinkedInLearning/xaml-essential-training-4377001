@@ -59,6 +59,10 @@
     <None Include="LongString.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Include="ListDataTemplate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,6 +70,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListDataTemplate.xaml.cs">
+      <DependentUpon>ListDataTemplate.xaml</DependentUpon>
     </Compile>
     <Compile Include="LongString.xaml.cs">
       <DependentUpon>LongString.xaml</DependentUpon>
