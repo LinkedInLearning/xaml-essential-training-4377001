@@ -1,0 +1,11 @@
+﻿<Window x:Class="PropertyAttributes.LongString"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        Title="LongString" Height="450" Width="800">
+    <Grid>
+		<Ellipse Fill='LinearGradientBrush[SpreadMethod=Pad,ColorInterpolationMode=					 ScRgbLinearInterpolation]:Color:Red,.O65F,Stop:Color:Yellow,03F, Color:Orange,.O15F,Stop:Color:Rose,04F, Stop:Color:LightOrange,01F}' />
+
+	
+	</Grid>
+</Window>
