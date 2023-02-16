@@ -112,7 +112,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="Resources.cd" />
+    <None Include="ClassDiagramResources.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

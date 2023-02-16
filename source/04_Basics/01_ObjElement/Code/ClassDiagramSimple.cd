@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="System.Windows.Shapes.Rectangle" Collapsed="true">
-    <Position X="7.5" Y="4.25" Width="1.5" />
+    <Position X="6" Y="4.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Shapes.Shape" Collapsed="true">
-    <Position X="8.25" Y="1.75" Width="1.5" />
+    <Position X="6.75" Y="1.75" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.FrameworkElement" Collapsed="true">
-    <Position X="6.5" Y="0.5" Width="1.75" />
+    <Position X="5" Y="0.5" Width="1.75" />
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="System.Windows.Shapes.Ellipse" Collapsed="true">
-    <Position X="9.25" Y="4.25" Width="1.5" />
+    <Position X="7.75" Y="4.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.Control" Collapsed="true">
-    <Position X="4.75" Y="1.75" Width="1.5" />
+    <Position X="3.25" Y="1.75" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.TextBox" Collapsed="true">
-    <Position X="4" Y="4.25" Width="1.5" />
+    <Position X="2.5" Y="4.25" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="System.Windows.Controls.Primitives.TextBoxBase" Collapsed="true">
-    <Position X="4.75" Y="3" Width="1.5" />
+    <Position X="3.25" Y="3" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.RichTextBox" Collapsed="true">
-    <Position X="5.75" Y="4.25" Width="1.5" />
+    <Position X="4.25" Y="4.25" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>

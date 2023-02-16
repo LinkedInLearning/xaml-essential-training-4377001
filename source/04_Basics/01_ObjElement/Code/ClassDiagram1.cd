@@ -1,26 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ObjectElements.Orb" Collapsed="true">
-    <Position X="7.75" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\Orb.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="System.Windows.UIElement" Collapsed="true">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="ObjectElements.ClockFace" Collapsed="true">
-    <Position X="10.5" Y="2" Width="1.25" />
+    <Position X="9.75" Y="2" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\ClockFace.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="System.Object" Collapsed="true">
-    <Position X="9.75" Y="0.5" Width="1.5" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Shapes.Rectangle" Collapsed="true">
@@ -64,9 +57,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ObjectElements.Tour" Collapsed="true">
-    <Position X="9" Y="2" Width="1.25" />
+    <Position X="8" Y="2" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Classes\Tour.cs</FileName>
     </TypeIdentifier>
   </Class>
