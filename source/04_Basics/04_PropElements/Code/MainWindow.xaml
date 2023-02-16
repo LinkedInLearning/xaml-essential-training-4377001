@@ -33,7 +33,7 @@
 						 Height='160'
 						 Opacity='.7'>
 			<Ellipse.Fill>
-				<RadialGradientBrush>
+				<RadialGradientBrush ColorInterpolationMode='ScRgbLinearInterpolation'>
 					<RadialGradientBrush.GradientStops>
 						<GradientStop Color='Black'
 													Offset='0' />

@@ -4,7 +4,7 @@
 
         Title="LongString" Height="450" Width="800">
     <Grid>
-		<Ellipse Fill='LinearGradientBrush[SpreadMethod=Pad,ColorInterpolationMode=					 ScRgbLinearInterpolation]:Color:Red,.O65F,Stop:Color:Yellow,03F, Color:Orange,.O15F,Stop:Color:Rose,04F, Stop:Color:LightOrange,01F}' />
+		<!--<Ellipse Fill='LinearGradientBrush[SpreadMethod=Pad,ColorInterpolationMode=					 ScRgbLinearInterpolation]:Color:Red,.O65F,Stop:Color:Yellow,03F, Color:Orange,.O15F,Stop:Color:Rose,04F, Stop:Color:LightOrange,01F}' />-->
 
 	
 	</Grid>
