@@ -1,0 +1,35 @@
+﻿<Window x:Class="Content101.Mocks.MocksWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				Title="MocksWindow"
+				Height="450"
+				Width="800">
+	<Grid>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<TextBox TextWrapping='Wrap'
+					TextAlignment='Center'
+					Text='hello' />
+
+<TextBox>	goodbye	</TextBox>
+<TextBox>
+	<!--<Image />-->
+</TextBox>
+
+	</Grid>
+</Window>

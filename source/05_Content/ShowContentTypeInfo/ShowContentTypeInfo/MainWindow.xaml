@@ -1,0 +1,41 @@
+﻿<Window x:Class="ShowContentTypeInfo.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:ShowContentTypeInfo"
+				mc:Ignorable="d"
+				Title="MainWindow"
+				WindowState='Maximized'
+				Height="450"
+				Width="800"
+				FontSize='20'>
+	<Grid>
+		<DataGrid ItemsSource='{Binding}'
+							AlternatingRowBackground='LightGoldenrodYellow'
+							AutoGenerateColumns='False'>
+			<DataGrid.Columns>
+				<DataGridTextColumn Header='UIElement Name'
+														Binding='{Binding UIElementName,  Mode=OneWay}' />
+				<DataGridTextColumn Header='ContentProperty Name'
+														Binding='{Binding ContentPropName, Mode=OneWay}' />
+				<DataGridTextColumn Header='.NET type for content'
+														Binding='{Binding PropertyType, Mode=OneWay}' />
+				<DataGridTextColumn Header='XAML'
+														Binding='{Binding XamlExample, Mode=OneWay}' Width='*'>
+
+					<DataGridTextColumn.ElementStyle>
+						<Style>
+							<Setter Property="TextBlock.TextWrapping"
+											Value="Wrap" />
+							<Setter Property="TextBlock.FontFamily"
+											Value="Consolas" />
+						</Style>
+					</DataGridTextColumn.ElementStyle>
+
+				</DataGridTextColumn>
+
+			</DataGrid.Columns>
+		</DataGrid>
+	</Grid>
+</Window>
