@@ -56,10 +56,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DataSource\CardSource.cs" />
-    <Compile Include="DataSource\CitySource.cs" />
-    <Compile Include="DataSource\CollectableCard.cs" />
-    <Compile Include="DataSource\CollectibleSimple.cs" />
+    <Compile Include="ContentControls\ContentControlsExample.xaml.cs">
+      <DependentUpon>ContentControlsExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CardSource.cs" />
+    <Compile Include="Models\CitySource.cs" />
+    <Compile Include="Models\CollectableCard.cs" />
+    <Compile Include="Models\SmallCard.cs" />
     <Compile Include="Decorators\DecoratorExample.xaml.cs">
       <DependentUpon>DecoratorExample.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
     <Compile Include="Text\TextBlockInlines.xaml.cs">
       <DependentUpon>TextBlockInlines.xaml</DependentUpon>
     </Compile>
+    <Page Include="ContentControls\ContentControlsExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Decorators\DecoratorExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -138,7 +145,6 @@
       <DependentUpon>MocksWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Mocks\TextBox.cs" />
-    <Compile Include="Models\Tour.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -169,9 +175,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ContentControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\Alien-Aneirin-md.png" />
     <Resource Include="Images\Alien-CelestiaDristi-md.png" />

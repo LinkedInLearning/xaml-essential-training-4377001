@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Content101.DataSource {
+namespace BigStar.Models{
 	internal class SmallCard {
 		public int Id { get; set; }
 		public string CardName { get; set; }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Content101.DataSource {
+namespace BigStar.Models{
 	public class CitySource {
 
 		private List<string> _cities;

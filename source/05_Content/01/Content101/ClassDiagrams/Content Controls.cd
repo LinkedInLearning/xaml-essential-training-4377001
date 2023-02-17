@@ -34,5 +34,17 @@
     <Position X="7.25" Y="2" Width="1.5" />
     <TypeIdentifier />
   </Class>
+  <Class Name="System.Windows.Window" Collapsed="true">
+    <Position X="9.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.Primitives.RepeatButton" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.ScrollViewer" Collapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
   <Font Name="Segoe UI" Size="10" />
 </ClassDiagram>

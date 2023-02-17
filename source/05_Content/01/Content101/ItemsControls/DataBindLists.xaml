@@ -4,14 +4,14 @@
 				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 				xmlns:local="clr-namespace:Content101.ItemsControls"
-				xmlns:data='clr-namespace:Content101.DataSource'
+				xmlns:models='clr-namespace:BigStar.Models'
 				mc:Ignorable="d"
 				Title="DataBindLists"
 				Height="450"
 				Width="600"
 				FontSize='22'>
 	<Window.DataContext>
-		<data:CitySource  />
+		<models:CitySource  />
 	</Window.DataContext>
 	<StackPanel>
 		<TextBlock Text='ListBox'
