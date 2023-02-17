@@ -4,10 +4,6 @@
              xmlns:local="clr-namespace:Content101"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-		<Style TargetType='Window'  >
 
-			<Setter Property='FontSize'
-							Value='39' />
-			</Style>
     </Application.Resources>
 </Application>
