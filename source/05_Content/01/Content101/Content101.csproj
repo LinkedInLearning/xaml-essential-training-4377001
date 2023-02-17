@@ -59,6 +59,7 @@
     <Compile Include="DataSource\CardSource.cs" />
     <Compile Include="DataSource\CitySource.cs" />
     <Compile Include="DataSource\CollectableCard.cs" />
+    <Compile Include="DataSource\CollectibleSimple.cs" />
     <Compile Include="Decorators\DecoratorExample.xaml.cs">
       <DependentUpon>DecoratorExample.xaml</DependentUpon>
     </Compile>
@@ -70,6 +71,9 @@
     </Compile>
     <Compile Include="ItemsControls\ItemsControlExample.xaml.cs">
       <DependentUpon>ItemsControlExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsControls\ListItemExample.xaml.cs">
+      <DependentUpon>ListItemExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\DockPanelExample.xaml.cs">
       <DependentUpon>DockPanelExample.xaml</DependentUpon>
@@ -93,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ItemsControls\ItemsControlExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemsControls\ListItemExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
