@@ -19,6 +19,8 @@
 		<ListBox ItemsSource='{Binding Cities}'>
 
 		</ListBox>
+		<TextBlock Text='ItemsControl'
+							 FontWeight='Bold' Margin='0,10,0,0'/>
 		<ItemsControl ItemsSource='{Binding Cities}' ></ItemsControl>
 	</StackPanel>
 	<Window.Resources>

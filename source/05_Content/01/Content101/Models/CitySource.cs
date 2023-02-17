@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,11 +8,11 @@ using System.Threading.Tasks;
 namespace BigStar.Models{
 	public class CitySource {
 
-		private List<string> _cities;
+		private ObservableCollection<string> _cities;
 		public CitySource() {
-			_cities = new List<string> { "Barcelona", "São Paulo", "Singapore", "Bangkok" };
+			_cities = new ObservableCollection<string> { "Barcelona", "São Paulo", "Singapore", "Bangkok" };
 		}
-		public List<string> Cities
+		public ObservableCollection<string> Cities
 		{
 			get
 			{
