@@ -56,9 +56,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataSource\CardSource.cs" />
     <Compile Include="DataSource\CitySource.cs" />
+    <Compile Include="DataSource\CollectableCard.cs" />
     <Compile Include="Decorators\DecoratorExample.xaml.cs">
       <DependentUpon>DecoratorExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsControls\DataBindGrid.xaml.cs">
+      <DependentUpon>DataBindGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="ItemsControls\DataBindLists.xaml.cs">
       <DependentUpon>DataBindLists.xaml</DependentUpon>
@@ -76,6 +81,10 @@
       <DependentUpon>TextBlockInlines.xaml</DependentUpon>
     </Compile>
     <Page Include="Decorators\DecoratorExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemsControls\DataBindGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +149,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="ClassDiagrams\Content Controls.cd" />
+    <None Include="ClassDiagrams\Decorators.cd" />
+    <None Include="ClassDiagrams\ItemsControl.cd" />
+    <None Include="ClassDiagrams\Panels.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

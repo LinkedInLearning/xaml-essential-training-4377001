@@ -28,16 +28,6 @@
 		</ComboBox>
 		<TextBlock Text='ListView'
 							 FontWeight='Bold' />
-		<ListBox >
-			<ListBoxItem>
-				<TextBlock Text='Mumbai' />
-			</ListBoxItem>
-			<ListBoxItem>
-				<TextBlock Text='Singapore' />
-			</ListBoxItem>
-			<ListBoxItem IsSelected='True'>
-				<TextBlock Text='Bangkok' />
-			</ListBoxItem>
-		</ListBox>
+		
 	</StackPanel>
 </Window>

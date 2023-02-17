@@ -1,0 +1,42 @@
+﻿<Window x:Class="Content101.ItemsControls.ListItemExample"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:Content101.ItemsControls"
+				mc:Ignorable="d"
+				Title="ListItemExample"
+				Height="450"
+				Width="500"
+				FontSize='22'>
+	<StackPanel>
+		<!-- Every item added to the Listbox
+			       is contained in a ListBoxItem 
+			  Items are selectable by user
+			  Selected items can be set by our app
+			  The UIElement doesn't have the feature
+			  but the ListBoxItem does.  (see diagram)
+			  
+			A ContentPresenter is responsible for 
+			wrapping every item with the ListBoxItem
+			-->
+
+		<ListBox SelectionMode='Multiple'>
+			<ListBoxItem>
+				<TextBlock Text='Mumbai' />
+			</ListBoxItem>
+			<ListBoxItem IsSelected='True'>
+				<TextBlock Text='Singapore'  />
+			</ListBoxItem>
+			<ListBoxItem >
+				<TextBlock Text='Bangkok' />
+			</ListBoxItem>
+			<ListBoxItem>
+				<TextBlock Text='Stockholm' />
+			</ListBoxItem>
+			<ListBoxItem IsSelected='True'>
+				<TextBlock Text='São Paulo' />
+			</ListBoxItem>
+		</ListBox>
+	</StackPanel>
+</Window>
