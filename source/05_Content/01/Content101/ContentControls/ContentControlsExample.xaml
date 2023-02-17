@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 				xmlns:net='clr-namespace:System;assembly=mscorlib'
-				xmlns:local="clr-namespace:Content101.ContentControls"
-				xmlns:models =' '
+				xmlns:local="clr-namespace:Content101.Windows"
+				xmlns:models ='clr-namespace:BigStar.Models'
         mc:Ignorable="d"
 				Title="ContentControlsExample"
 				Height="450"
@@ -14,9 +14,9 @@
     <StackPanel>
 		<Button Content='hello'>
 			<Button.ToolTip>
-				<StackPanel>
-					<Image Source="/Images/BSC_Horizontal_Violet-Gold.png" Height='40'  />
-					<TextBlock Text='Any content can be placed in the ToolTip'>
+				<StackPanel  Orientation='Horizontal'>
+					<Image Source="/Images/Monster-Group.png" Height='90'  />
+					<TextBlock Text='Any content can be placed in the ToolTip' FontSize='30' VerticalAlignment='Center' Margin='10,0,0,0'>
 
 					</TextBlock>
 

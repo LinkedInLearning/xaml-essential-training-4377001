@@ -59,6 +59,12 @@
     <Compile Include="ContentControls\ContentControlsExample.xaml.cs">
       <DependentUpon>ContentControlsExample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContentControls\ContentServices.xaml.cs">
+      <DependentUpon>ContentServices.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentControls\NonUiContent.xaml.cs">
+      <DependentUpon>NonUiContent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\CardSource.cs" />
     <Compile Include="Models\CitySource.cs" />
     <Compile Include="Models\CollectableCard.cs" />
@@ -88,6 +94,14 @@
       <DependentUpon>TextBlockInlines.xaml</DependentUpon>
     </Compile>
     <Page Include="ContentControls\ContentControlsExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContentControls\ContentServices.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContentControls\NonUiContent.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

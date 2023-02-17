@@ -24,7 +24,7 @@ namespace Content101 {
 
 		private void Inlines_Click(object sender, RoutedEventArgs e) {
 			(new Windows.TextBlockInlines()).Show();
-        }
+		}
 
 		private void PanelsButton_Click(object sender, RoutedEventArgs e) {
 			(new Windows.PanelsExample()).Show();
@@ -36,6 +36,34 @@ namespace Content101 {
 
 		private void ItemsControlButton_Click(object sender, RoutedEventArgs e) {
 			(new Windows.ItemsControlExample()).Show();
+		}
+
+		private void BindListsButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.DataBindLists()).Show();
+		}
+
+		private void BindGridButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.DataBindGrid()).Show();
+		}
+
+		private void ListItemButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.ListItemExample()).Show();
+		}
+
+		private void ContentControlButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.ContentControlsExample()).Show();
+		}
+
+		private void DecoratorButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.DecoratorExample()).Show();
+		}
+
+		private void NonUiButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.NonUiContent()).Show();
+		}
+
+		private void ContentServiceButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.ContentServices()).Show();
 		}
 	}
 }

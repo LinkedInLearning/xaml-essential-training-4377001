@@ -21,8 +21,6 @@ namespace Content101.Windows {
 			InitializeComponent();
 		}
 
-		private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-
-        }
+	
     }
 }

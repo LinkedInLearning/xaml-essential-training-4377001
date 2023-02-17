@@ -14,10 +14,10 @@ using System.Windows.Shapes;
 
 namespace Content101.Windows {
 	/// <summary>
-	/// Interaction logic for ListItemExample.xaml
+	/// Interaction logic for NonUiContent.xaml
 	/// </summary>
-	public partial class ListItemExample : Window {
-		public ListItemExample() {
+	public partial class NonUiContent : Window {
+		public NonUiContent() {
 			InitializeComponent();
 		}
 	}

@@ -17,10 +17,11 @@ namespace BigStar.Models
 	
 
 		public TeamNames TeamName { get; set; }
-		public string ShortDescription { get; set; }
-	
 		public decimal CatalogPrice { get; set; }
 		public decimal BidPrice { get; set; }
+		public string ShortDescription { get; set; }
+	
+		
 	
 		public decimal SalePrice
 		{

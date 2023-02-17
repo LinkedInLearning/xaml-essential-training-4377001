@@ -21,12 +21,29 @@
 		<Button x:Name='ItemsControlButton'
 						Content='ItemsControls and ListBox'
 						Click='ItemsControlButton_Click' />
-		<Button x:Name='button4'
-						Content='Button' />
-		<Button x:Name='button5'
-						Content='Button' />
-		<Button x:Name='button6'
-						Content='Button' />
+		<Button x:Name='BindListsButton'
+						Content='Databind Lists'
+						Click='BindListsButton_Click' />
+		<Button x:Name='BindGridButton'
+						Content='Databind Grid'
+						Click='BindGridButton_Click' />
+		<Button x:Name='ListItemButton'
+						Content='ListItem Wrapper'
+						Click='ListItemButton_Click' />
+		<Button x:Name='ContentControlButton'
+						Content='Content Controls'
+						Click='ContentControlButton_Click' />
+		
+		<Button x:Name='NonUiButton'
+						Content='Non UI Content'
+						Click='NonUiButton_Click' />
+		<Button x:Name='ContentServiceButton'
+						Content='Content Services'
+						Click='ContentServiceButton_Click' />
+		<Button x:Name='DecoratorButton'
+						Content='Decorators'
+						Click='DecoratorButton_Click' />
+	
 
 	</StackPanel>
 		
