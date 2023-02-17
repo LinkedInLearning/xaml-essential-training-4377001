@@ -1,4 +1,4 @@
-﻿<Window x:Class="Content101.DockPanelExample"
+﻿<Window x:Class="Content101.Windows.DockPanelExample"
 				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 				Title="DockPanelExample"

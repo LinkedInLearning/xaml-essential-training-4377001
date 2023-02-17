@@ -7,8 +7,21 @@
 				xmlns:local="clr-namespace:Content101.ContentControls"
 				xmlns:models =' '
         mc:Ignorable="d"
-        Title="ContentControlsExample" Height="450" Width="800" >
-    <Grid>
-		<Button Content='hello' />
-	</Grid>
+				Title="ContentControlsExample"
+				Height="450"
+				Width="800"
+				FontSize='22'>
+    <StackPanel>
+		<Button Content='hello'>
+			<Button.ToolTip>
+				<StackPanel>
+					<Image Source="/Images/BSC_Horizontal_Violet-Gold.png" Height='40'  />
+					<TextBlock Text='Any content can be placed in the ToolTip'>
+
+					</TextBlock>
+
+				</StackPanel>
+			</Button.ToolTip>
+		</Button>
+	</StackPanel>
 </Window>

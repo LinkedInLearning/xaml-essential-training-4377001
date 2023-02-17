@@ -7,16 +7,28 @@
 				mc:Ignorable="d"
 				Title="MainWindow"
 				Height="500"
-				Width="600">
-	<StackPanel>
-		
-		<DockPanel>
-			<Button>
-				<Image />
-			</Button>
-		</DockPanel>
-		
-		<Slider></Slider>
-		<TextBlock></TextBlock>
+				Width="600"  FontSize='22'>
+	<StackPanel Margin='30' Background='LightYellow'>
+		<Button x:Name='InlinesButton'
+						Content='TextBlock Inlines'
+						Click='Inlines_Click' />
+		<Button x:Name='PanelsButton'
+						Content='Panels'
+						Click='PanelsButton_Click' />
+		<Button x:Name='DockPanelButton'
+						Content='DockPanel'
+						Click='DockPanelButton_Click' />
+		<Button x:Name='ItemsControlButton'
+						Content='ItemsControls and ListBox'
+						Click='ItemsControlButton_Click' />
+		<Button x:Name='button4'
+						Content='Button' />
+		<Button x:Name='button5'
+						Content='Button' />
+		<Button x:Name='button6'
+						Content='Button' />
+
 	</StackPanel>
+		
+
 </Window>

@@ -7,7 +7,7 @@
 		<Style TargetType='Window'  >
 
 			<Setter Property='FontSize'
-							Value='22' />
+							Value='39' />
 			</Style>
     </Application.Resources>
 </Application>

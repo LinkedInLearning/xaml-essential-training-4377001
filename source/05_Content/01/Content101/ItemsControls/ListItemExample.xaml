@@ -8,7 +8,7 @@
 				Title="ListItemExample"
 				Height="450"
 				Width="500"
-				>
+				FontSize='22' >
 	<StackPanel>
 		<!-- Every item added to the Listbox
 			       is contained in a ListBoxItem 
@@ -26,9 +26,9 @@
 				<TextBlock Text='Mumbai' />
 			</ListBoxItem>
 			<ListBoxItem IsSelected='True'>
-				<TextBlock Text='Singapore'  />
+				<TextBlock Text='Singapore' />
 			</ListBoxItem>
-			<ListBoxItem >
+			<ListBoxItem>
 				<TextBlock Text='Bangkok' />
 			</ListBoxItem>
 			<ListBoxItem>

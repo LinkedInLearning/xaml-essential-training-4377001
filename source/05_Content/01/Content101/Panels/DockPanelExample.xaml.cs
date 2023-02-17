@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Content101 {
+namespace Content101.Windows {
 	/// <summary>
 	/// Interaction logic for DockPanelExample.xaml
 	/// </summary>

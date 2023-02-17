@@ -21,5 +21,21 @@ namespace Content101 {
 		public MainWindow() {
 			InitializeComponent();
 		}
+
+		private void Inlines_Click(object sender, RoutedEventArgs e) {
+			(new Windows.TextBlockInlines()).Show();
+        }
+
+		private void PanelsButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.PanelsExample()).Show();
+		}
+
+		private void DockPanelButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.DockPanelExample()).Show();
+		}
+
+		private void ItemsControlButton_Click(object sender, RoutedEventArgs e) {
+			(new Windows.ItemsControlExample()).Show();
+		}
 	}
 }
