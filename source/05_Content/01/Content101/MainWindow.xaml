@@ -6,8 +6,14 @@
 				xmlns:local="clr-namespace:Content101"
 				mc:Ignorable="d"
 				Title="MainWindow"
-				Height="500"
+				Height="600"
 				Width="600"  FontSize='22'>
+	<Window.Resources>
+		<Style TargetType='Button'>
+			<Setter Property='Margin'
+							Value='0,5' />
+		</Style>
+	</Window.Resources>
 	<StackPanel Margin='30' Background='LightYellow'>
 		<Button x:Name='InlinesButton'
 						Content='TextBlock Inlines'

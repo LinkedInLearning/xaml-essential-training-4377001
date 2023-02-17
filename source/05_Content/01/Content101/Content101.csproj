@@ -56,8 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ContentControls\ContentControlsExample.xaml.cs">
-      <DependentUpon>ContentControlsExample.xaml</DependentUpon>
+    <Compile Include="ContentControls\ContentControls.xaml.cs">
+      <DependentUpon>ContentControls.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContentControls\ContentServices.xaml.cs">
       <DependentUpon>ContentServices.xaml</DependentUpon>
@@ -69,8 +69,8 @@
     <Compile Include="Models\CitySource.cs" />
     <Compile Include="Models\CollectableCard.cs" />
     <Compile Include="Models\SmallCard.cs" />
-    <Compile Include="Decorators\DecoratorExample.xaml.cs">
-      <DependentUpon>DecoratorExample.xaml</DependentUpon>
+    <Compile Include="Decorators\Decorators.xaml.cs">
+      <DependentUpon>Decorators.xaml</DependentUpon>
     </Compile>
     <Compile Include="ItemsControls\DataBindGrid.xaml.cs">
       <DependentUpon>DataBindGrid.xaml</DependentUpon>
@@ -78,22 +78,22 @@
     <Compile Include="ItemsControls\DataBindLists.xaml.cs">
       <DependentUpon>DataBindLists.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemsControls\ItemsControlExample.xaml.cs">
-      <DependentUpon>ItemsControlExample.xaml</DependentUpon>
+    <Compile Include="ItemsControls\ItemsControl.xaml.cs">
+      <DependentUpon>ItemsControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemsControls\ListItemExample.xaml.cs">
-      <DependentUpon>ListItemExample.xaml</DependentUpon>
+    <Compile Include="ItemsControls\ListItem.xaml.cs">
+      <DependentUpon>ListItem.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\DockPanelExample.xaml.cs">
-      <DependentUpon>DockPanelExample.xaml</DependentUpon>
+    <Compile Include="Panels\DockPanel.xaml.cs">
+      <DependentUpon>DockPanel.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\PanelsExample.xaml.cs">
-      <DependentUpon>PanelsExample.xaml</DependentUpon>
+    <Compile Include="Panels\Panels.xaml.cs">
+      <DependentUpon>Panels.xaml</DependentUpon>
     </Compile>
     <Compile Include="Text\TextBlockInlines.xaml.cs">
       <DependentUpon>TextBlockInlines.xaml</DependentUpon>
     </Compile>
-    <Page Include="ContentControls\ContentControlsExample.xaml">
+    <Page Include="ContentControls\ContentControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,7 +105,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Decorators\DecoratorExample.xaml">
+    <Page Include="Decorators\Decorators.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -117,15 +117,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemsControls\ItemsControlExample.xaml">
+    <Page Include="ItemsControls\ItemsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemsControls\ListItemExample.xaml">
+    <Page Include="ItemsControls\ListItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\DockPanelExample.xaml">
+    <Page Include="Panels\DockPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,7 +145,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\PanelsExample.xaml">
+    <Page Include="Panels\Panels.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

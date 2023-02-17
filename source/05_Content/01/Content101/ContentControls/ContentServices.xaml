@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Content Services" Height="450" Width="800">
     <StackPanel>
-			<!-- Content control have services for content
-			  ContentAlignment, Padding
+			<!-- Content services 
+					 ContentAlignment, Padding
 			-->
 		<Image Source="/Images/Aliens-Group.png"
 					 Width='400'
 					  />
-		<Button HorizontalContentAlignment='Left' Padding='30'>
+		<Button >
 			<Image Source="/Images/Aliens-Group.png"
 						 Width='400'
 						 HorizontalAlignment='Left' />
