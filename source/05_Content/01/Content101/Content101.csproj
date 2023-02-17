@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Content101</RootNamespace>
     <AssemblyName>Content101</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,9 +56,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="TextBlockInlines.xaml.cs">
+    <Compile Include="DataSource\CitySource.cs" />
+    <Compile Include="Decorators\DecoratorExample.xaml.cs">
+      <DependentUpon>DecoratorExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsControls\DataBindLists.xaml.cs">
+      <DependentUpon>DataBindLists.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ItemsControls\ItemsControlExample.xaml.cs">
+      <DependentUpon>ItemsControlExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\DockPanelExample.xaml.cs">
+      <DependentUpon>DockPanelExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\PanelsExample.xaml.cs">
+      <DependentUpon>PanelsExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Text\TextBlockInlines.xaml.cs">
       <DependentUpon>TextBlockInlines.xaml</DependentUpon>
     </Compile>
+    <Page Include="Decorators\DecoratorExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemsControls\DataBindLists.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ItemsControls\ItemsControlExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\DockPanelExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,7 +107,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TextBlockInlines.xaml">
+    <Page Include="Panels\PanelsExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Text\TextBlockInlines.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -102,6 +139,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagrams\Content Controls.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,7 +149,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ContentControls\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Alien-Aneirin-md.png" />
     <Resource Include="Images\Alien-CelestiaDristi-md.png" />
@@ -173,6 +213,9 @@
     <Resource Include="Images\Monster-Yodel-card.png" />
     <Resource Include="Images\Monster-Yodel-md.png" />
     <Resource Include="Images\monsterLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Eye.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
