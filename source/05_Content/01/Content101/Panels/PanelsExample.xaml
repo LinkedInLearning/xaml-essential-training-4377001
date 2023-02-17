@@ -8,16 +8,19 @@
 				Title="PanelsExample"
 				Height="450"
 				Width="600">
-	<DockPanel >
+	<StackPanel>
 		<Rectangle Fill='#FFD44368'
 							 Height='40'
-							 Width='125' DockPanel.Dock='Bottom' />
+							 Width='125' />
+	
+		
 		<Image Source="/Images/Card-Monster-Yodel-Front.png"
-					 Width='120' />
+					 Width='120'
+					 />
 		<Image Source="/Images/Card-Monster-Yodel-Back.png"
-					 Width='120' />
+					 Width='120'  />
 		<Rectangle Fill='BurlyWood'
 							 Height='40'
-							 Width='125' DockPanel.Dock='Top' />
-	</DockPanel>
+							 Width='125' />
+	</StackPanel>
 </Window>

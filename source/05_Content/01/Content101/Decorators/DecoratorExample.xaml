@@ -1,0 +1,58 @@
+﻿<Window x:Class="Content101.Decorators.DecoratorExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Content101.Decorators"
+        mc:Ignorable="d"
+        Title="DecoratorExample" Height="600" Width="400" FontSize='22'>
+    <StackPanel>
+		<BulletDecorator 
+											VerticalAlignment="Center"
+											Background="PaleGoldenrod">
+			<BulletDecorator.Bullet>
+			<Image Source="/Images/eye.png" Width='20' />
+
+			</BulletDecorator.Bullet>
+			<TextBlock 
+								 TextWrapping="Wrap"
+								 HorizontalAlignment="Left"
+							
+								 Text='   Monster Card 1'>
+ 
+			</TextBlock>
+		</BulletDecorator>
+		<BulletDecorator VerticalAlignment="Center"
+										 Background="PaleGoldenrod">
+			<BulletDecorator.Bullet>
+				<Ellipse Width='18'
+								 Height='18'
+								 Fill='Red' Margin='2'/>
+
+			</BulletDecorator.Bullet>
+			<TextBlock TextWrapping="Wrap"
+								 HorizontalAlignment="Left"
+								
+								 Text='   Monster Card 2'>
+
+			</TextBlock>
+		</BulletDecorator>
+
+		<Border Margin='40' MinHeight='90'
+						BorderThickness='12'
+						BorderBrush='#FFDAE78D'>
+			<Border.Background>
+				<LinearGradientBrush EndPoint='0.5,1'
+														 StartPoint='0.5,0'>
+					<GradientStop Color='#FF77185E'
+												Offset='1' />
+					<GradientStop Color='#FF4A8F91'
+												Offset='0' />
+				</LinearGradientBrush>
+			</Border.Background>
+
+		</Border>
+		<!-- move image into border-->	
+		<Image Source="/Images/Alien-Tomolor-md.png" />
+	</StackPanel>
+</Window>
