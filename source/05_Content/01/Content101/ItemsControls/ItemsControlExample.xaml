@@ -8,7 +8,7 @@
 				Title="ItemsControlExample"
 				Height="450"
 				Width="600"
-				FontSize='22'>
+				>
 	<StackPanel>
 		<TextBlock Text='ListBox'
 							 FontWeight='Bold' />

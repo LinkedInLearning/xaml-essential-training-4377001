@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Content101.Decorators"
         mc:Ignorable="d"
-        Title="DecoratorExample" Height="600" Width="400" FontSize='22'>
+        Title="DecoratorExample" Height="600" Width="400" >
     <StackPanel>
 		<BulletDecorator 
 											VerticalAlignment="Center"
