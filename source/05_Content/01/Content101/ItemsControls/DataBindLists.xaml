@@ -11,7 +11,7 @@
 				Width="600"
 				FontSize='22'>
 	<Window.DataContext>
-		<models:CitySource  />
+		<models:CitySource />
 	</Window.DataContext>
 	<StackPanel>
 		<TextBlock Text='ListBox'
@@ -20,10 +20,11 @@
 
 		</ListBox>
 		<TextBlock Text='ItemsControl'
-							 FontWeight='Bold' Margin='0,10,0,0'/>
-		<ItemsControl ItemsSource='{Binding Cities}' ></ItemsControl>
+							 FontWeight='Bold'
+							 Margin='0,10,0,0' />
+		<ItemsControl ItemsSource='{Binding Cities}'></ItemsControl>
 	</StackPanel>
 	<Window.Resources>
-		
+
 	</Window.Resources>
 </Window>
