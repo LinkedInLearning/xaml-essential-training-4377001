@@ -35,7 +35,7 @@
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Window" Collapsed="true">
-    <Position X="9.25" Y="2" Width="1.5" />
+    <Position X="11.25" Y="2" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.Primitives.RepeatButton" Collapsed="true">
@@ -43,7 +43,7 @@
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.ScrollViewer" Collapsed="true">
-    <Position X="11.25" Y="2" Width="1.5" />
+    <Position X="9.25" Y="2" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="10" />

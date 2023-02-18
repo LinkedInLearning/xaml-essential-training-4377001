@@ -1,22 +1,58 @@
 ﻿<Window x:Class="Content101.Windows.ContentControlsExample"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 				xmlns:net='clr-namespace:System;assembly=mscorlib'
 				xmlns:local="clr-namespace:Content101.Windows"
-				xmlns:models ='clr-namespace:BigStar.Models'
-        mc:Ignorable="d"
+				xmlns:models='clr-namespace:BigStar.Models'
+				mc:Ignorable="d"
 				Title="ContentControlsExample"
 				Height="450"
 				Width="800"
 				FontSize='22'>
-    <StackPanel>
+	<Window.Resources>
+		<Style TargetType='Button'>
+			<Setter Property='Margin'
+							Value='0,5' />
+		</Style>
+	</Window.Resources>
+	<StackPanel>
+		<Button>
+			<TextBlock Background="AntiqueWhite"
+								 TextWrapping="Wrap"
+								 Padding='12'>
+
+			<Bold>Card: Trisaphron </Bold>
+			<LineBreak />
+			Trisaphron earned a masters degree in practical operations from <Run TextDecorations='Underline'>Omerania University</Run> after completing a bachelors of science in impractical mathematics. <LineBreak /> a keen ability to watch and understand the nuances of cooperation among production robots. <LineBreak />
+			<Line X1='0'
+						X2='700'
+						StrokeThickness='2'
+						Stroke='DarkOrange'
+						Margin='0,20,0,0' />
+
+			</TextBlock>
+		</Button>
+		<Button>
+			<StackPanel Orientation='Horizontal'>
+
+				<Image Source="/Images/Card-Monster-Yodel-Front.png"
+							 Width='120' />
+				<Image Source="/Images/Card-Monster-Yodel-Back.png"
+							 Width='120' />
+
+			</StackPanel>
+		</Button>
 		<Button Content='hello'>
 			<Button.ToolTip>
 				<StackPanel  Orientation='Horizontal'>
-					<Image Source="/Images/Monster-Group.png" Height='90'  />
-					<TextBlock Text='Any content can be placed in the ToolTip' FontSize='30' VerticalAlignment='Center' Margin='10,0,0,0'>
+					<Image Source="/Images/Monster-Group.png"
+								 Height='90' />
+					<TextBlock Text='Any content can be placed in the ToolTip'
+										 FontSize='30'
+										 VerticalAlignment='Center'
+										 Margin='10,0,0,0'>
 
 					</TextBlock>
 
