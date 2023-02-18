@@ -8,7 +8,7 @@
 				xmlns:models='clr-namespace:BigStar.Models'
 				mc:Ignorable="d"
 				Title="ContentControlsExample"
-				Height="450"
+				Height="600"
 				Width="800"
 				FontSize='22'>
 	<Window.Resources>
