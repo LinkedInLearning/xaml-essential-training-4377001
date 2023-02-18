@@ -8,13 +8,15 @@
 				Title="PanelsExample"
 				Height="450"
 				Width="600">
-	<StackPanel>
+	<!-- Panels have Child property
+	     of type UIElementCollection -->
+	
+	<StackPanel Orientation='Horizontal'>
 		<Rectangle Fill='#FFD44368'
 							 Height='40'
 							 Width='125' />
 	
-		
-		<Image Source="/Images/Card-Monster-Yodel-Front.png"
+	<Image Source="/Images/Card-Monster-Yodel-Front.png"
 					 Width='120'
 					 />
 		<Image Source="/Images/Card-Monster-Yodel-Back.png"
