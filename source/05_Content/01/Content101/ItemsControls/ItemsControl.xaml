@@ -26,8 +26,23 @@
 			<TextBlock Text='Paris' />
 			<TextBlock Text='Vancouver' />
 		</ComboBox>
-		<TextBlock Text='ListView'
+		<TextBlock Text='ListBox with other UI'
 							 FontWeight='Bold' />
-		
+		<ListBox>
+			<StackPanel Orientation='Horizontal'>
+				<Image Source="/Images/Monster-Group.png"
+							 Height='90' />
+				<TextBlock Text='Any content can be placed in the ToolTip'
+									 FontSize='30'
+									 VerticalAlignment='Center'
+									 Margin='10,0,0,0'>
+
+				</TextBlock>
+			</StackPanel>
+			<TextBlock Text='São Paulo' />
+			<Ellipse Width='90'
+							 Fill='Orange'
+							 Height='40' />
+		</ListBox>
 	</StackPanel>
 </Window>
