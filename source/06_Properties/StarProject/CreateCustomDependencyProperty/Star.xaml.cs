@@ -17,16 +17,7 @@ using System.Windows.Shapes;
 namespace CreateCustomDependencyProperty {
 
 	public partial class Star : UserControl {
-		public enum StarPoints {
-			Default = 8,
-			Two = 2,
-			Three = 3,
-			Four = 4,
-			Six = 6,
-			Eight = 8,
-			Ten = 10,
-			Twelve = 12
-		}
+
 		public Star() {
 			InitializeComponent();
 		}
@@ -101,7 +92,7 @@ namespace CreateCustomDependencyProperty {
 		}
 		protected virtual void OnPointsChanged(DependencyPropertyChangedEventArgs e) {
 
-			int pointCount = Math.Min((int)e.NewValue, 12);
+			int pointCount = Math.Min((int)e.NewValue, 10);
 			pointCount = Math.Max((int)e.NewValue, 2);
 	
 

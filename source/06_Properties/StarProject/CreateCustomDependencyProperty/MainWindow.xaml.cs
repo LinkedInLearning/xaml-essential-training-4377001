@@ -27,5 +27,33 @@ namespace CreateCustomDependencyProperty {
      // BottomStar.SetValue(StarShape.PointsProperty, 6);
      
 		}
+
+		private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+			TheStar.Points = (int)e.NewValue;
+		}
+
+		private void InnerSizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+			TheStar.InnerSize = (double)e.NewValue;
+		}
+
+		private void ForegroundRectangle_MouseUp(object sender, MouseButtonEventArgs e) {
+
+			var currentRect = sender as Rectangle;
+			if (currentRect != null)
+			{
+
+				TheStar.Foreground = currentRect.Fill;
+			}
+
+		}
+
+		private void BackgroundRectangle_MouseUp(object sender, MouseButtonEventArgs e) {
+			var currentRect = sender as Rectangle;
+			if (currentRect != null)
+			{
+
+				TheStar.Background = currentRect.Fill;
+			}
+		}
 	}
 }

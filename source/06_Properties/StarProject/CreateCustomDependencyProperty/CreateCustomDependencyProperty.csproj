@@ -62,9 +62,6 @@
     <Compile Include="Star.xaml.cs">
       <DependentUpon>Star.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StarShape.xaml.cs">
-      <DependentUpon>StarShape.xaml</DependentUpon>
-    </Compile>
     <Page Include="AnimatedStar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -82,10 +79,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Star.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="StarShape.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
