@@ -22,22 +22,38 @@ namespace StarLib.Shapes {
 			InitializeComponent();
 		}
 
+		// To use DependencyProperty the class must derive from DependencyObject
+		// most WPF elements have this class somewhere in
+		// their class hierarchy
+
+		// 1. declare an variable to represent the DP
+		//    This is always an instance of the DependencyProperty class
+		//    Info about your property must be available to all of WPF
+		//    so make it a static field
 		public static readonly DependencyProperty InnerSizeProperty;
+
 		public static readonly DependencyProperty PointsPropery;
 		public static readonly DependencyProperty BackEffectVisibleProperty;
+		public static readonly DependencyProperty MessageProperty;
 
 		static Star() {
-			var meta = new PropertyMetadata(defaultValue: 1.0,
-																		propertyChangedCallback: InnerSizeChanged);
-			InnerSizeProperty = DependencyProperty.Register(name: "InnerSize",
-																									propertyType: typeof(double),
-																									ownerType: typeof(Star),
-																									typeMetadata: meta);
+			// 2. Register with the DP system
+			// PointsProperty = DependencyProperty.Register("Points",
+			//								  typeof(double), typeof(StarShape), null);
 
-			var meta2 = new PropertyMetadata(defaultValue: 8,
+			// readonly properties can only be set
+			// in the static constructor
+
+			var meta1 = new PropertyMetadata(defaultValue: 8,
 																	propertyChangedCallback: PointsChanged);
 			PointsPropery = DependencyProperty.Register(name: "Points",
 																									propertyType: typeof(int),
+																									ownerType: typeof(Star),
+																									typeMetadata: meta1);
+			var meta2 = new PropertyMetadata(defaultValue: 1.0,
+																	propertyChangedCallback: InnerSizeChanged);
+			InnerSizeProperty = DependencyProperty.Register(name: "InnerSize",
+																									propertyType: typeof(double),
 																									ownerType: typeof(Star),
 																									typeMetadata: meta2);
 
@@ -48,46 +64,24 @@ namespace StarLib.Shapes {
 																									propertyType: typeof(bool),
 																									ownerType: typeof(Star),
 																									typeMetadata: meta3);
-		} 
 
-		#region InnerSize
+			var meta4 = new PropertyMetadata(defaultValue: String.Empty,
+														propertyChangedCallback: MessageChanged);
+			MessageProperty = DependencyProperty.Register(name: "MessageProperty",
+																									propertyType: typeof(string),
+																									ownerType: typeof(Star),
+																									typeMetadata: meta4);
+		}
+
+
+
+		#region Points
+
 		// Optional
 		// Create CLR wrapper for the DP
 		// Note that there is NO backing variable
 		// Do not put any code in the get/set other 
 		// that calls to the GetValue/SetValue 
-		public double InnerSize
-		{
-			get { return (double)GetValue(InnerSizeProperty); }
-			set { SetValue(InnerSizeProperty, value); }
-		}
-
-		#region Property Changed
-		private static void InnerSizeChanged(object sender, DependencyPropertyChangedEventArgs args) {
-			((Star)sender).OnInnerSizeChanged(args);
-
-		}
-		protected virtual void OnInnerSizeChanged(DependencyPropertyChangedEventArgs e) {
-
-			var newValue = (double)e.NewValue;
-			if (newValue < 0)
-			{
-				InnerSize = Math.Abs(newValue);
-			}
-			var render = SmallGrid.RenderTransform as TransformGroup;
-			var scale = render.Children.OfType<ScaleTransform>().First();
-			scale.ScaleX = scale.ScaleY = newValue;
-
-
-
-		}
-
-		#endregion
-
-		#endregion
-
-		#region Points
-
 		public int Points
 		{
 			get { return (int)GetValue(PointsPropery); }
@@ -150,6 +144,38 @@ namespace StarLib.Shapes {
 		#endregion
 
 
+		#region InnerSize
+
+		public double InnerSize
+		{
+			get { return (double)GetValue(InnerSizeProperty); }
+			set { SetValue(InnerSizeProperty, value); }
+		}
+
+		#region Property Changed
+		private static void InnerSizeChanged(object sender, DependencyPropertyChangedEventArgs args) {
+			((Star)sender).OnInnerSizeChanged(args);
+
+		}
+		protected virtual void OnInnerSizeChanged(DependencyPropertyChangedEventArgs e) {
+
+			var newValue = (double)e.NewValue;
+			if (newValue < 0)
+			{
+				InnerSize = Math.Abs(newValue);
+			}
+			var render = SmallGrid.RenderTransform as TransformGroup;
+			var scale = render.Children.OfType<ScaleTransform>().First();
+			scale.ScaleX = scale.ScaleY = newValue;
+
+
+
+		}
+
+		#endregion
+
+		#endregion
+
 		#region BackEffectVisible
 
 		public bool BackEffectVisible
@@ -186,5 +212,28 @@ namespace StarLib.Shapes {
 		#endregion
 
 
+
+		#region Message
+
+		public string Message
+		{
+			get { return (string)GetValue(MessageProperty); }
+			set { SetValue(MessageProperty, value); }
+		}
+
+
+		private static void MessageChanged(object sender, DependencyPropertyChangedEventArgs args) {
+			((Star)sender).OnMessageChanged(args);
+
+		}
+		protected virtual void OnMessageChanged(DependencyPropertyChangedEventArgs e) {
+
+			string message = e.NewValue.ToString();
+			MessageTextBlock.Text = message;
+		}
+
+
+
+		#endregion
 	}
 }

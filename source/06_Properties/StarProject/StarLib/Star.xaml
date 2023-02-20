@@ -16,10 +16,8 @@
 					Width="150"
 					Background='White'
 					Height="150">
-		
-		
 
-		<Grid.Resources>
+			<Grid.Resources>
 				<Color x:Key='MainColor'>#99FF0000</Color>
 				<Color x:Key='AccentColor'>Darkorange</Color>
 
@@ -178,6 +176,13 @@
 						</TransformGroup>
 					</Ellipse.RenderTransform>
 				</Ellipse>
+				<TextBlock x:Name='MessageTextBlock'
+									 Text='...'
+									 HorizontalAlignment='Center'
+									 VerticalAlignment='Center'
+									 Panel.ZIndex='400'
+									 Foreground='{Binding Background, ElementName=starShape}' Opacity='.8'/>
+
 			</Grid>
 			<Grid Width="150"
 						x:Name='SmallGrid'
