@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CreateCustomDependencyProperty {
+namespace StarLib.Shapes {
 
 	public partial class Star : UserControl {
 
@@ -24,6 +24,7 @@ namespace CreateCustomDependencyProperty {
 
 		public static readonly DependencyProperty InnerSizeProperty;
 		public static readonly DependencyProperty PointsPropery;
+		public static readonly DependencyProperty BackEffectVisibleProperty;
 
 		static Star() {
 			var meta = new PropertyMetadata(defaultValue: 1.0,
@@ -39,7 +40,15 @@ namespace CreateCustomDependencyProperty {
 																									propertyType: typeof(int),
 																									ownerType: typeof(Star),
 																									typeMetadata: meta2);
-		}
+
+
+			var meta3 = new PropertyMetadata(defaultValue: true,
+														propertyChangedCallback: BackEffectVisibleChanged);
+			BackEffectVisibleProperty = DependencyProperty.Register(name: "BackEffectVisible",
+																									propertyType: typeof(bool),
+																									ownerType: typeof(Star),
+																									typeMetadata: meta3);
+		} 
 
 		#region InnerSize
 		// Optional
@@ -87,14 +96,14 @@ namespace CreateCustomDependencyProperty {
 
 		#region Points Property Changed
 		private static void PointsChanged(object sender, DependencyPropertyChangedEventArgs args) {
-			((Star)sender).OnPointsChanged(args);
+			((Star)sender).OnStarburstVisibleChanged(args);
 
 		}
-		protected virtual void OnPointsChanged(DependencyPropertyChangedEventArgs e) {
+		protected virtual void OnStarburstVisibleChanged(DependencyPropertyChangedEventArgs e) {
 
 			int pointCount = Math.Min((int)e.NewValue, 10);
 			pointCount = Math.Max((int)e.NewValue, 2);
-	
+
 
 			double angle = 180 / pointCount;
 			double angleCounter = 0;
@@ -133,6 +142,42 @@ namespace CreateCustomDependencyProperty {
 				rot.Angle = angleCounter;
 				angleCounter += angle;
 			}
+
+		}
+
+		#endregion
+
+		#endregion
+
+
+		#region BackEffectVisible
+
+		public bool BackEffectVisible
+		{
+			get { return (bool)GetValue(BackEffectVisibleProperty); }
+			set { SetValue(BackEffectVisibleProperty, value); }
+		}
+
+		#region BackEffectVisible Property Changed
+		private static void BackEffectVisibleChanged(object sender, DependencyPropertyChangedEventArgs args) {
+			((Star)sender).OnBackEffectVisible(args);
+
+		}
+		protected virtual void OnBackEffectVisible(DependencyPropertyChangedEventArgs e) {
+
+			bool IsVisible = (bool)e.NewValue;
+
+			if (IsVisible)
+			{
+				BackCircle.Visibility = Visibility.Visible;
+			}
+			else
+			{
+				BackCircle.Visibility = Visibility.Collapsed;
+			}
+
+
+
 
 		}
 

@@ -1,36 +1,32 @@
-﻿<Window x:Class="CreateCustomDependencyProperty.MainWindow"
+﻿<Window xmlns:Shapes="clr-namespace:StarLib.Shapes;assembly=StarLib"  x:Class="TheStarShape.MainWindow"
 				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-				xmlns:local="clr-namespace:CreateCustomDependencyProperty"
+				xmlns:local="clr-namespace:TheStarShape"
+				xmlns:starlib='http://BigStar.com/StarLib'
+
 				mc:Ignorable="d"
 				Title="MainWindow"
 				Height="800"
 				Width="900"
 				FontSize='18'>
 	<StackPanel>
+	
 		<StackPanel.Resources>
-			<Style TargetType='local:Star'>
+			<Style TargetType='Shapes:Star'>
 				<Setter Property='Foreground'
 								Value='LightBlue' />
 			</Style>
 		</StackPanel.Resources>
-		<StackPanel Orientation='Horizontal'>
-			<local:Star InnerSize='.5'
+		<StackPanel Orientation='Horizontal' HorizontalAlignment='Center'>
+		
+			<Shapes:Star InnerSize='.5'
 									Points='10'
 									Height='450'
 									Width='450'
 									x:Name='TheStar'
 									Foreground='orange'
-									Background='#99FF0000' />
-			<local:Star 
-									Points='10'
-									Height='450'
-									Width='450'
-									InnerSize='{Binding ElementName=InnerSizeSlider2, Path=Value}'
-									x:Name='TheStar2'
-								
 									Background='#99FF0000' />
 		</StackPanel>
 
@@ -52,14 +48,14 @@
 						x:Name='InnerSizeSlider'
 						ValueChanged='InnerSizeSlider_ValueChanged'
 						Margin='20,0' />
-		<Slider Minimum='0'
-						Maximum='1'
-						SmallChange='.05'
-						Value='.6'
-						x:Name='InnerSizeSlider2'
-						
-						Margin='20,0' />
 
+	
+
+		<CheckBox IsChecked='True' x:Name='BackEffectCheckBox'
+							Content='Is Back Effect Visible' HorizontalAlignment='Center'
+							Checked='CheckBox_Checked'
+							Unchecked='CheckBox_Unchecked'
+							Margin='0,10' />
 		<UniformGrid Rows='2'
 								 Columns='3'
 								 Margin='4'>
@@ -76,18 +72,17 @@
 				</Style>
 			</UniformGrid.Resources>
 			<Rectangle Fill='#FF39DBD8'
-								 MouseUp='BackgroundRectangle_MouseUp' />
+								 MouseUp='BackRectangle_MouseUp' />
 			<Rectangle 	Fill='#FFDBA018'
-									MouseUp='BackgroundRectangle_MouseUp' />
+									MouseUp='BackRectangle_MouseUp' />
 			<Rectangle Fill='#FF8766F3'
-								 MouseUp='BackgroundRectangle_MouseUp' />
-
+								 MouseUp='BackRectangle_MouseUp' />
 			<Rectangle Fill='#F77FB070'
-								 MouseUp='ForegroundRectangle_MouseUp' />
+								 MouseUp='ForeRectangle_MouseUp' />
 			<Rectangle 	Fill='#B2F383BC'
-									MouseUp='ForegroundRectangle_MouseUp' />
+									MouseUp='ForeRectangle_MouseUp' />
 			<Rectangle Fill='#4CFB1818'
-								 MouseUp='ForegroundRectangle_MouseUp' />
+								 MouseUp='ForeRectangle_MouseUp' />
 		</UniformGrid>
 	</StackPanel>
 </Window>

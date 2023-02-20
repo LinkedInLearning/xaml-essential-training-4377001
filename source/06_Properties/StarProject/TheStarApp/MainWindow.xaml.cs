@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CreateCustomDependencyProperty {
+namespace TheStarShape {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
@@ -33,27 +33,35 @@ namespace CreateCustomDependencyProperty {
 		}
 
 		private void InnerSizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
-			TheStar.InnerSize = (double)e.NewValue;
+		TheStar.InnerSize = (double)e.NewValue;
 		}
 
-		private void ForegroundRectangle_MouseUp(object sender, MouseButtonEventArgs e) {
+		private void ForeRectangle_MouseUp(object sender, MouseButtonEventArgs e) {
 
 			var currentRect = sender as Rectangle;
 			if (currentRect != null)
 			{
 
-				TheStar.Foreground = currentRect.Fill;
+			TheStar.Foreground = currentRect.Fill;
 			}
 
 		}
 
-		private void BackgroundRectangle_MouseUp(object sender, MouseButtonEventArgs e) {
+		private void BackRectangle_MouseUp(object sender, MouseButtonEventArgs e) {
 			var currentRect = sender as Rectangle;
 			if (currentRect != null)
 			{
 
 				TheStar.Background = currentRect.Fill;
 			}
+		}
+
+		private void CheckBox_Checked(object sender, RoutedEventArgs e) {
+			TheStar.BackEffectVisible = true;
+		}
+
+		private void CheckBox_Unchecked(object sender, RoutedEventArgs e) {
+			TheStar.BackEffectVisible = false;
 		}
 	}
 }

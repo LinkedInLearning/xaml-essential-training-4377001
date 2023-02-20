@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarLib", "StarLib\StarLib.csproj", "{82520612-D2CC-4104-823B-D18A564F081D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheStarShape", "TheStarApp\TheStarShape.csproj", "{F8E1916F-C7F4-4028-B0A4-C89353DC4A3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82520612-D2CC-4104-823B-D18A564F081D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82520612-D2CC-4104-823B-D18A564F081D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82520612-D2CC-4104-823B-D18A564F081D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82520612-D2CC-4104-823B-D18A564F081D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E1916F-C7F4-4028-B0A4-C89353DC4A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E1916F-C7F4-4028-B0A4-C89353DC4A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E1916F-C7F4-4028-B0A4-C89353DC4A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E1916F-C7F4-4028-B0A4-C89353DC4A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3203480-D131-44B0-83F6-5165D03CD560}
+	EndGlobalSection
+EndGlobal
