@@ -32,6 +32,9 @@ namespace StarLib.Shapes {
 		// By defining DP with static keyword it can be shared across multiple instances of a class.
 		// This means that the property is not tied to a specific instance of the class,
 		// but rather to the class itself.
+
+		public static readonly DependencyProperty PointsPropery;
+
 		public static readonly DependencyProperty InnerSizeProperty;
 		public static readonly DependencyProperty BackEffectVisibleProperty;
 		public static readonly DependencyProperty MessageProperty;
@@ -50,28 +53,28 @@ namespace StarLib.Shapes {
 																									propertyType: typeof(int),
 																									ownerType: typeof(Star),
 																									typeMetadata: meta);
-			
+
 			var meta2 = new PropertyMetadata(defaultValue: 1.0,
 																	propertyChangedCallback: InnerSizeChanged);
 			InnerSizeProperty = DependencyProperty.Register(name: "InnerSize",
-																									propertyType: typeof(double),
-																									ownerType: typeof(Star),
-																									typeMetadata: meta2);
+																											propertyType: typeof(double),
+																											ownerType: typeof(Star),
+																											typeMetadata: meta2);
 
 
 			var meta3 = new PropertyMetadata(defaultValue: true,
 														propertyChangedCallback: BackEffectVisibleChanged);
 			BackEffectVisibleProperty = DependencyProperty.Register(name: "BackEffectVisible",
-																									propertyType: typeof(bool),
-																									ownerType: typeof(Star),
-																									typeMetadata: meta3);
+																														propertyType: typeof(bool),
+																														ownerType: typeof(Star),
+																														typeMetadata: meta3);
 
 			var meta4 = new PropertyMetadata(defaultValue: String.Empty,
 														propertyChangedCallback: MessageChanged);
 			MessageProperty = DependencyProperty.Register(name: "MessageProperty",
-																									propertyType: typeof(string),
-																									ownerType: typeof(Star),
-																									typeMetadata: meta4);
+																										propertyType: typeof(string),
+																										ownerType: typeof(Star),
+																										typeMetadata: meta4);
 		}
 
 
@@ -91,10 +94,10 @@ namespace StarLib.Shapes {
 
 		#region Points Property Changed
 		private static void PointsChanged(object sender, DependencyPropertyChangedEventArgs args) {
-			((Star)sender).OnStarburstVisibleChanged(args);
+			((Star)sender).OnPointsChanged(args);
 
 		}
-		protected virtual void OnStarburstVisibleChanged(DependencyPropertyChangedEventArgs e) {
+		protected virtual void OnPointsChanged(DependencyPropertyChangedEventArgs e) {
 
 			int pointCount = Math.Min((int)e.NewValue, 10);
 			pointCount = Math.Max((int)e.NewValue, 2);
@@ -153,7 +156,6 @@ namespace StarLib.Shapes {
 			set { SetValue(InnerSizeProperty, value); }
 		}
 
-		#region Property Changed
 		private static void InnerSizeChanged(object sender, DependencyPropertyChangedEventArgs args) {
 			((Star)sender).OnInnerSizeChanged(args);
 
@@ -168,13 +170,7 @@ namespace StarLib.Shapes {
 			var render = SmallGrid.RenderTransform as TransformGroup;
 			var scale = render.Children.OfType<ScaleTransform>().First();
 			scale.ScaleX = scale.ScaleY = newValue;
-
-
-
 		}
-
-		#endregion
-
 		#endregion
 
 		#region BackEffectVisible
@@ -184,8 +180,6 @@ namespace StarLib.Shapes {
 			get { return (bool)GetValue(BackEffectVisibleProperty); }
 			set { SetValue(BackEffectVisibleProperty, value); }
 		}
-
-		#region BackEffectVisible Property Changed
 		private static void BackEffectVisibleChanged(object sender, DependencyPropertyChangedEventArgs args) {
 			((Star)sender).OnBackEffectVisible(args);
 
@@ -202,17 +196,8 @@ namespace StarLib.Shapes {
 			{
 				BackCircle.Visibility = Visibility.Collapsed;
 			}
-
-
-
-
 		}
-
 		#endregion
-
-		#endregion
-
-
 
 		#region Message
 
@@ -221,7 +206,6 @@ namespace StarLib.Shapes {
 			get { return (string)GetValue(MessageProperty); }
 			set { SetValue(MessageProperty, value); }
 		}
-
 
 		private static void MessageChanged(object sender, DependencyPropertyChangedEventArgs args) {
 			((Star)sender).OnMessageChanged(args);
@@ -232,8 +216,6 @@ namespace StarLib.Shapes {
 			string message = e.NewValue.ToString();
 			MessageTextBlock.Text = message;
 		}
-
-
 
 		#endregion
 	}
