@@ -33,8 +33,6 @@ namespace StarLib.Shapes {
 		// This means that the property is not tied to a specific instance of the class,
 		// but rather to the class itself.
 		public static readonly DependencyProperty InnerSizeProperty;
-
-		public static readonly DependencyProperty PointsPropery;
 		public static readonly DependencyProperty BackEffectVisibleProperty;
 		public static readonly DependencyProperty MessageProperty;
 
