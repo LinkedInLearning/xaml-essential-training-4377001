@@ -27,6 +27,7 @@
 									 Message='Star'
 									 Height='450'
 									 Width='450'
+									 x:Name='TheStar'
 									 Background='#99FF0000' />
 		</StackPanel>
 

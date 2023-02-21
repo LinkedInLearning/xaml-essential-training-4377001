@@ -41,15 +41,15 @@ namespace StarLib.Shapes {
 			// PointsProperty = DependencyProperty.Register("Points",
 			//								  typeof(double), typeof(StarShape), null);
 
-			// readonly properties can only be set
+			// read-only properties can only be set
 			// in the static constructor
 
-			var meta1 = new PropertyMetadata(defaultValue: 8,
+			var meta = new PropertyMetadata(defaultValue: 8,
 																	propertyChangedCallback: PointsChanged);
 			PointsPropery = DependencyProperty.Register(name: "Points",
 																									propertyType: typeof(int),
 																									ownerType: typeof(Star),
-																									typeMetadata: meta1);
+																									typeMetadata: meta);
 			var meta2 = new PropertyMetadata(defaultValue: 1.0,
 																	propertyChangedCallback: InnerSizeChanged);
 			InnerSizeProperty = DependencyProperty.Register(name: "InnerSize",
