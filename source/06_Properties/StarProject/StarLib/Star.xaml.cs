@@ -33,7 +33,7 @@ namespace StarLib.Shapes {
 		// This means that the property is not tied to a specific instance of the class,
 		// but rather to the class itself.
 
-		public static readonly DependencyProperty PointsPropery;
+		public static readonly DependencyProperty PointsProperty;
 
 		public static readonly DependencyProperty InnerSizeProperty;
 		public static readonly DependencyProperty BackEffectVisibleProperty;
@@ -49,7 +49,7 @@ namespace StarLib.Shapes {
 
 			var meta = new PropertyMetadata(defaultValue: 8,
 																	propertyChangedCallback: PointsChanged);
-			PointsPropery = DependencyProperty.Register(name: "Points",
+			PointsProperty = DependencyProperty.Register(name: "Points",
 																									propertyType: typeof(int),
 																									ownerType: typeof(Star),
 																									typeMetadata: meta);
@@ -88,8 +88,8 @@ namespace StarLib.Shapes {
 		// that calls to the GetValue/SetValue 
 		public int Points
 		{
-			get { return (int)GetValue(PointsPropery); }
-			set { SetValue(PointsPropery, value); }
+			get { return (int)GetValue(PointsProperty); }
+			set { SetValue(PointsProperty, value); }
 		}
 
 		#region Points Property Changed
