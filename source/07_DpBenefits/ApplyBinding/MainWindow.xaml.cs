@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PropInheritance {
+namespace ApplyBinding {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml
 	/// </summary>
@@ -22,12 +22,8 @@ namespace PropInheritance {
 			InitializeComponent();
 		}
 
-		private void RectButton_Click(object sender, RoutedEventArgs e) {
-		
-		}
-
-		private void StarButton_Click(object sender, RoutedEventArgs e) {
-			(new ManyStars()).Show();
+		private void CodeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+			CodeStar.Points = (int)CodeSlider.Value;
 		}
 	}
 }

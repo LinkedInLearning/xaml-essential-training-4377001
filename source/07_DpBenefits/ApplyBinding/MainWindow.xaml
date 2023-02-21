@@ -1,0 +1,40 @@
+﻿<Window xmlns:Shapes="clr-namespace:StarLib.Shapes;assembly=StarLib"
+				x:Class="ApplyBinding.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:ApplyBinding"
+				mc:Ignorable="d"
+				Title="MainWindow"
+				Height="700"
+				Width="800"
+				FontSize='22'>
+	<StackPanel>
+		<UniformGrid Columns='2'>
+
+			<Shapes:Star Margin='9'
+									 Points='2'  x:Name='CodeStar'/>
+			<Shapes:Star  Margin='9'
+										Points='{Binding ElementName=BindSlider, Path=Value}'
+										x:Name='BindingStar' 
+										
+										/>
+
+		</UniformGrid>
+		<UniformGrid Columns='2'>
+			<TextBlock Text='Set Points in Code' />
+			<TextBlock Text='Set Points With Binding' />
+
+			<Slider Minimum='2'
+							x:Name='CodeSlider'
+							Maximum='10'
+							Margin='3'
+							ValueChanged='CodeSlider_ValueChanged' />
+			<Slider Minimum='2'
+							x:Name='BindSlider'
+							Maximum='10'
+							Margin='3' />
+		</UniformGrid>
+	</StackPanel>
+</Window>

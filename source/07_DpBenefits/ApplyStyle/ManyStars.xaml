@@ -30,7 +30,7 @@
 
 						<Setter Property='InnerSize'
 										Value='.7' />
-					
+
 					</Style>
 
 				</UniformGrid.Resources>
