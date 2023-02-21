@@ -1,0 +1,91 @@
+﻿<Window x:Class="Precedence.Win2"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:Precedence"
+				mc:Ignorable="d"
+				Title="Demo2Window"
+				Height="800"
+				Width="800"
+				FontSize='22'
+				WindowState='Maximized'>
+	<Window.Resources>
+		<Style TargetType='TextBlock'
+					 x:Key='myStyle'>
+			<Setter Property='Background'
+							Value='Pink' />
+		</Style>
+		<Style TargetType='TextBlock'
+					 x:Key='triggerStyle'>
+			<Style.Triggers>
+				<Trigger Property='IsMouseOver'
+								 Value='True'>
+					<Setter Property='Background'
+									Value='Tomato' />
+				</Trigger>
+			</Style.Triggers>
+
+		</Style>
+		<Style TargetType='Button'>
+			<Setter Property='Margin'
+							Value='0,10' />
+		</Style>
+	
+
+	</Window.Resources>
+	<DockPanel Margin='20'>
+		<Grid DockPanel.Dock='Top'>
+			<Grid.RowDefinitions>
+				<RowDefinition Height='auto' />
+				<RowDefinition Height='auto' />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width='Auto' />
+				<ColumnDefinition Width='20' />
+				<ColumnDefinition Width='*' />
+
+			</Grid.ColumnDefinitions>
+			<StackPanel Grid.Column='0'
+									Background='White'>
+				<TextBlock FontSize='18'
+									 FontWeight='Bold'
+									 Grid.Column="0"
+									 Text='Demo' />
+				<TextBlock x:Name='tb4'
+									 Style='{StaticResource myStyle}'
+									 Grid.Row="4">Background: set via style</TextBlock>
+				<TextBlock x:Name='tb5'
+									 Grid.Row="5"
+									 Style='{StaticResource myStyle}'
+									 Background='LightBlue'
+									 Text='Background: set via style, but local takes precedence' />
+				<TextBlock x:Name='tb6'
+									 Grid.Row="6"
+									 Style='{StaticResource triggerStyle}'
+									 Text='Background: set via Trigger' />
+			</StackPanel >
+
+			<StackPanel x:Name='MessageStackPanel'
+									Grid.Column='2'
+									Background='White'>
+				<TextBlock FontSize='18'
+									 FontWeight='Bold'
+									 Text='Current Precedence Level' />
+				<TextBlock x:Name='tbResult4' />
+				<TextBlock x:Name='tbResult5' />
+				<TextBlock x:Name='tbResult6' />
+
+			</StackPanel>
+
+		</Grid>
+		<Border BorderBrush='LightGray'
+						BorderThickness='1'
+						DockPanel.Dock='Bottom'
+						Height='400'
+						VerticalAlignment='Bottom'
+						HorizontalAlignment='Left'>
+			<Image Source='/Screenshots/OrderScreenshot.png' />
+		</Border>
+	</DockPanel>
+</Window>
