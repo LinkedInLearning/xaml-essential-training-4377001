@@ -10,9 +10,7 @@
 				Title="MainWindow"
 				Height="800"
 				Width="900"
-				FontSize='18'
-				
-				>
+				FontSize='18' >
 	<StackPanel>
 
 		<StackPanel.Resources>
