@@ -10,9 +10,13 @@
   <ItemGroup>
     <None Remove="OrderScreenshot.png" />
     <None Remove="Screenshots\Example01-01.png" />
+    <None Remove="Screenshots\Example02-01.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Screenshots\Example02-01.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Screenshots\OrderScreenshot.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

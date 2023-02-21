@@ -40,7 +40,7 @@ namespace Precedence {
 			{
 				return "Animated";
 			}
-			return "Not Animated";
+			return source.BaseValueSource.ToString();
 		}
 		private void AnimateButton_Click(object sender, RoutedEventArgs e) {
 			Storyboard? sb = this.FindResource("Storyboard1") as Storyboard;
@@ -50,6 +50,10 @@ namespace Precedence {
 		
 		}
 
-	
+		private void Button_Click(object sender, RoutedEventArgs e) {
+			Storyboard? sb = this.FindResource("Storyboard1") as Storyboard;
+
+			sb.Stop();
+		}
 	}
 }

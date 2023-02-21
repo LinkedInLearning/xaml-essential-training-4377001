@@ -11,81 +11,98 @@
 				FontSize='22'
 				WindowState='Maximized'>
 	<Window.Resources>
-		<Style TargetType='TextBlock'
-					 x:Key='myStyle'>
-			<Setter Property='Background'
-							Value='Pink' />
-		</Style>
-		<Style TargetType='TextBlock'
-					 x:Key='triggerStyle'>
-			<Style.Triggers>
-				<Trigger Property='IsMouseOver'
-								 Value='True'>
-					<Setter Property='Background'
-									Value='Tomato' />
-				</Trigger>
-			</Style.Triggers>
 
-		</Style>
 		<Style TargetType='Button'>
 			<Setter Property='Margin'
 							Value='0,10' />
 		</Style>
-	
 
 	</Window.Resources>
-	<DockPanel Margin='20'>
-		<Grid DockPanel.Dock='Top'>
-			<Grid.RowDefinitions>
-				<RowDefinition Height='auto' />
-				<RowDefinition Height='auto' />
-			</Grid.RowDefinitions>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width='Auto' />
-				<ColumnDefinition Width='20' />
-				<ColumnDefinition Width='*' />
 
-			</Grid.ColumnDefinitions>
-			<StackPanel Grid.Column='0'
-									Background='White'>
-				<TextBlock FontSize='18'
-									 FontWeight='Bold'
-									 Grid.Column="0"
-									 Text='Demo' />
-				<TextBlock x:Name='tb4'
-									 Style='{StaticResource myStyle}'
-									 Grid.Row="4">Background: set via style</TextBlock>
-				<TextBlock x:Name='tb5'
-									 Grid.Row="5"
-									 Style='{StaticResource myStyle}'
-									 Background='LightBlue'
-									 Text='Background: set via style, but local takes precedence' />
-				<TextBlock x:Name='tb6'
-									 Grid.Row="6"
-									 Style='{StaticResource triggerStyle}'
-									 Text='Background: set via Trigger' />
-			</StackPanel >
+	<Grid Margin='20'>
+		<Grid.RowDefinitions>
+			<RowDefinition Height='auto' />
+			<RowDefinition Height='auto' />
+			<RowDefinition Height='auto' />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width='Auto' />
+			<ColumnDefinition Width='20' />
+			<ColumnDefinition Width='*' />
 
-			<StackPanel x:Name='MessageStackPanel'
-									Grid.Column='2'
-									Background='White'>
-				<TextBlock FontSize='18'
-									 FontWeight='Bold'
-									 Text='Current Precedence Level' />
-				<TextBlock x:Name='tbResult4' />
-				<TextBlock x:Name='tbResult5' />
-				<TextBlock x:Name='tbResult6' />
+		</Grid.ColumnDefinitions>
+		<TextBlock FontSize='18'
+							 FontWeight='Bold'
+							 Grid.Column="0"
+							 Text='Example: Background' />
+		<TextBlock FontSize='18'
+							 FontWeight='Bold'
+							 Text='Current Precedence Level'
+							 Grid.Column='2' />
 
-			</StackPanel>
+		<StackPanel Grid.Column='0'
+								Grid.Row='1'>
+			<StackPanel.Resources>
+				<Style TargetType='TextBlock'
+							 x:Key='myStyle'>
+					<Setter Property='Background'
+									Value='Pink' />
+				</Style>
+				<Style TargetType='TextBlock'
+							 x:Key='triggerStyle'>
+					<Style.Triggers>
+						<Trigger Property='IsMouseOver'
+										 Value='True'>
+							<Setter Property='Background'
+											Value='Tomato' />
+						</Trigger>
+					</Style.Triggers>
+				</Style>
+			</StackPanel.Resources>
+			<TextBlock x:Name='tb4'
+								 Style='{StaticResource myStyle}'
+								 Text='1. Garlic' />
+			<TextBlock x:Name='tb5'
+								 Style='{StaticResource myStyle}'
+								 Background='LightBlue'
+								 Text='2. Onion' />
+			<TextBlock x:Name='tb6'
+								 Style='{StaticResource triggerStyle}'
+								 Text='3. Ginger' />
 
-		</Grid>
-		<Border BorderBrush='LightGray'
-						BorderThickness='1'
-						DockPanel.Dock='Bottom'
-						Height='400'
-						VerticalAlignment='Bottom'
-						HorizontalAlignment='Left'>
-			<Image Source='/Screenshots/OrderScreenshot.png' />
-		</Border>
-	</DockPanel>
+		</StackPanel >
+
+		<StackPanel x:Name='MessageStackPanel'
+								Grid.Column='2'
+								Grid.Row='1'>
+
+			<TextBlock x:Name='tbResult4' />
+			<TextBlock x:Name='tbResult5' />
+			<TextBlock x:Name='tbResult6' />
+
+		</StackPanel>
+
+		<StackPanel Orientation='Horizontal'
+								DockPanel.Dock='Bottom'
+								Grid.Row='2'
+								Grid.ColumnSpan='3'
+								Margin='0,40,0,0'>
+			<Border BorderBrush='LightGray'
+							BorderThickness='3'
+							Height='300'
+							VerticalAlignment='Bottom'
+							HorizontalAlignment='Left'>
+				<Image Source='/Screenshots/OrderScreenshot.png' />
+			</Border>
+			<Border BorderBrush='LightGray'
+							BorderThickness='1'
+							Margin='20,0,0,0'
+							Height='600'
+							VerticalAlignment='Bottom'
+							HorizontalAlignment='Left'>
+				<Image Source="/Screenshots/Example02-01.png" />
+
+			</Border>
+		</StackPanel>
+	</Grid>
 </Window>
