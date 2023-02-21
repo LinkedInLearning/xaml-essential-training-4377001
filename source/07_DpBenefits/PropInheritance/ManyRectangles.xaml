@@ -1,0 +1,102 @@
+﻿<Window x:Class="PropInheritance.ManyRectangles"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:PropInheritance"
+				mc:Ignorable="d"
+				Title="ManyRectangles"
+				Height="600"
+				Width="600"
+				FontSize='22'>
+	<StackPanel>
+		<TextBlock Text='A grid filled with shapes'
+							 Margin='20,10'></TextBlock>
+
+		<Border BorderThickness='2'
+						BorderBrush='DarkGray'
+						Margin='20'>
+			<UniformGrid x:Name='MainGrid'
+									 Background='AliceBlue'
+									 Margin='20'
+									 Columns='11'>
+				<UniformGrid.Resources>
+
+					<Style TargetType='Rectangle'>
+						<!--<Setter Property='Stroke'
+									Value='DarkBlue' />
+					<Setter Property='StrokeThickness'
+									Value='2' />-->
+						<Setter Property='Height'
+										Value='36' />
+						<Setter Property='Width'
+										Value='24' />
+						<Setter Property='Fill'
+										Value='LightBlue' />
+					</Style>
+					<Style TargetType='Ellipse'>
+						<Setter Property='Stroke'
+										Value='Gray' />
+						<Setter Property='Height'
+										Value='40' />
+						<Setter Property='Width'
+										Value='40' />
+
+						<Setter Property='Fill'
+										Value='LightGoldenrodYellow' />
+						<!--<Setter Property='StrokeThickness'
+									Value='2' />
+-->
+
+					</Style>
+				</UniformGrid.Resources>
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+				<Rectangle />
+				<Ellipse />
+
+			</UniformGrid >
+		</Border>
+	</StackPanel>
+
+</Window>

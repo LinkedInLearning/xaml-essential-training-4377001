@@ -21,5 +21,13 @@ namespace PropInheritance {
 		public MainWindow() {
 			InitializeComponent();
 		}
+
+		private void RectButton_Click(object sender, RoutedEventArgs e) {
+			(new ManyRectangles()).Show();
+		}
+
+		private void StarButton_Click(object sender, RoutedEventArgs e) {
+			(new ManyStars()).Show();
+		}
 	}
 }

@@ -1,0 +1,327 @@
+﻿<UserControl x:Class="StarLib.Shapes.Star"
+						 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+						 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+						 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+						 xmlns:local="clr-namespace:StarLib.Shapes"
+						 mc:Ignorable="d"
+						 Name='starShape'
+						 d:DesignHeight="450"
+						 d:DesignWidth="450"
+						 Foreground='LightCoral'
+						 Background='DarkOrchid'>
+	<Viewbox  Stretch="Fill">
+
+		<Grid x:Name="LayoutRoot"
+					Width="150"
+					Background='White'
+					Height="150">
+
+			<Grid.Resources>
+				<Color x:Key='MainColor'>#99FF0000</Color>
+				<Color x:Key='AccentColor'>Darkorange</Color>
+
+				<SolidColorBrush x:Key='new' />
+				<SolidColorBrush x:Key='AccentBrush'
+												 Color='{DynamicResource AccentColor}' />
+
+				<Style TargetType='Ellipse'>
+
+					<Setter Property='RenderTransformOrigin'
+									Value='0.5,0.5' />
+					<Setter Property='Height'
+									Value='42' />
+					<Setter Property='Width'
+									Value='150' />
+					<Setter Property='Stroke'
+									Value='{x:Null}' />
+				</Style>
+			</Grid.Resources>
+
+			<Ellipse x:Name='BackCircle'
+							 Width='150'
+							 Height='150'
+							 Panel.ZIndex='-2'>
+				<Ellipse.Fill>
+					<RadialGradientBrush>
+						<GradientStop Color='{Binding Foreground.Color, ElementName=starShape}' />
+						<GradientStop Color='White'
+													Offset='1' />
+					</RadialGradientBrush>
+				</Ellipse.Fill>
+			</Ellipse>
+
+			<Grid Width="150"
+						Height="150"
+						x:Name='BigGrid'>
+
+				<Ellipse  Fill='{Binding Foreground, ElementName=starShape}'
+									x:Name='elip1'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY=".2" />
+
+							<RotateTransform Angle="0" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip2'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY=".2 " />
+
+							<RotateTransform Angle="10" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip3'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY=".2" />
+
+							<RotateTransform Angle="20" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip4'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="30" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip5'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="40" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip6'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="50" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip7'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="60" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse  Fill='{Binding Foreground, ElementName=starShape}'
+									x:Name='elip8'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="70" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip9'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="80" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding Foreground, ElementName=starShape}'
+								 x:Name='elip10'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.20" />
+
+							<RotateTransform Angle="90" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<TextBlock x:Name='MessageTextBlock'
+									 Text='...'
+									 HorizontalAlignment='Center'
+									 VerticalAlignment='Center'
+									 Panel.ZIndex='400'
+									 Foreground='{Binding Background, ElementName=starShape}' Opacity='.8'/>
+
+			</Grid>
+			<Grid Width="150"
+						x:Name='SmallGrid'
+						Visibility='Visible'
+						Height="150"
+						Panel.ZIndex='-1'
+						RenderTransformOrigin="0.5,0.5">
+
+				<Grid.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform ScaleX="0.8"
+														ScaleY="0.8" />
+
+					</TransformGroup>
+				</Grid.RenderTransform>
+
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'>
+
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY=".2" />
+
+							<RotateTransform Angle="105" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip2'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="115" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip3'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY=".2" />
+
+							<RotateTransform Angle="125" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip4'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="135" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip5'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="145" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip6'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="155" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip7'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="165" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip8'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="175" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip9'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="185" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+				<Ellipse Fill='{Binding ElementName=starShape,Path=Background}'
+								 x:Name='smElip10'>
+					<Ellipse.RenderTransform>
+						<TransformGroup>
+							<ScaleTransform ScaleX="1"
+															ScaleY="0.2" />
+
+							<RotateTransform Angle="195" />
+
+						</TransformGroup>
+					</Ellipse.RenderTransform>
+				</Ellipse>
+			</Grid>
+		</Grid>
+
+	</Viewbox>
+
+</UserControl>
