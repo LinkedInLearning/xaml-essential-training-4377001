@@ -1,14 +1,14 @@
 ﻿<Window xmlns:Shapes="clr-namespace:StarLib.Shapes;assembly=StarLib"
-				x:Class="PropInheritance.ManyStars"
+				x:Class="ApplyStyle.ManyStars"
 				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-				xmlns:local="clr-namespace:PropInheritance"
+				xmlns:local="clr-namespace:ApplyStyle"
 				mc:Ignorable="d"
 				Title="ManyStars"
 				Height="600"
-				Width="700" >
+				Width="700">
 	<StackPanel>
 		<TextBlock Text='A grid filled with shapes'
 							 Margin='20,10'></TextBlock>
@@ -18,23 +18,29 @@
 						Margin='20'>
 			<UniformGrid x:Name='MainGrid'
 									 Margin='20'
-									 Columns='5' >
+									 Columns='5'>
 				<UniformGrid.Resources>
 
-			
+					<Style TargetType='Shapes:Star'>
+
+						<!--<Setter Property='Points'
+										Value='2' />-->
+						<Setter Property='BackEffectVisible'
+										Value='False' />
+
+						<Setter Property='InnerSize'
+										Value='.7' />
+					
+					</Style>
 
 				</UniformGrid.Resources>
 
-				<Shapes:Star Points='2' Message='Two' />
-				<Shapes:Star Points='3'
-										 Message='Three'  />
-				<Shapes:Star Points='4'
-										 Message='Four' />
-				<Shapes:Star Points='5'
-										 Message='Five' />
-				<Shapes:Star Points='10'
-										 Message='Ten' />
-				<Shapes:Star  />
+				<Shapes:Star Points='2' />
+				<Shapes:Star Points='3' />
+				<Shapes:Star Points='4' />
+				<Shapes:Star Points='5' />
+				<Shapes:Star Points='10' />
+				<Shapes:Star />
 				<Shapes:Star />
 				<Shapes:Star />
 				<Shapes:Star />
