@@ -23,10 +23,10 @@
 
 			<Shapes:Star InnerSize='.5'
 									 Points='10'
+									 BackEffectVisible='True'
+									 Message='Star'
 									 Height='450'
 									 Width='450'
-									 x:Name='TheStar'
-									 Message='Star'
 									 Background='#99FF0000' />
 		</StackPanel>
 
