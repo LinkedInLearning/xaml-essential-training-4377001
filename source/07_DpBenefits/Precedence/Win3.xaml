@@ -49,8 +49,7 @@
 				<StackPanel Orientation='Vertical'>
 					<Button	Content='Start Animation'
 									Click='AnimateButton_Click' />
-					<Button	Content='Stop Animation'
-									Click='Button_Click' />
+					
 
 				</StackPanel>
 				

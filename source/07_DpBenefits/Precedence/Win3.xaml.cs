@@ -50,10 +50,6 @@ namespace Precedence {
 		
 		}
 
-		private void Button_Click(object sender, RoutedEventArgs e) {
-			Storyboard? sb = this.FindResource("Storyboard1") as Storyboard;
-
-			sb.Stop();
-		}
+	
 	}
 }
