@@ -26,10 +26,12 @@ namespace StarLib.Shapes {
 		// most WPF elements have this class somewhere in
 		// their class hierarchy
 
-		// 1. declare an variable to represent the DP
-		//    This is always an instance of the DependencyProperty class
-		//    Info about your property must be available to all of WPF
-		//    so make it a static field
+		// 1. declare an public field
+		//    of DependencyProperty type
+
+		// By defining DP with static keyword it can be shared across multiple instances of a class.
+		// This means that the property is not tied to a specific instance of the class,
+		// but rather to the class itself.
 		public static readonly DependencyProperty InnerSizeProperty;
 
 		public static readonly DependencyProperty PointsPropery;
@@ -50,6 +52,7 @@ namespace StarLib.Shapes {
 																									propertyType: typeof(int),
 																									ownerType: typeof(Star),
 																									typeMetadata: meta);
+			
 			var meta2 = new PropertyMetadata(defaultValue: 1.0,
 																	propertyChangedCallback: InnerSizeChanged);
 			InnerSizeProperty = DependencyProperty.Register(name: "InnerSize",
