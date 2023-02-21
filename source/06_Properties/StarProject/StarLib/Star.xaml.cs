@@ -30,9 +30,9 @@ namespace StarLib.Shapes {
 		//    This is always an instance of the DependencyProperty class
 		//    Info about your property must be available to all of WPF
 		//    so make it a static field
-		public static readonly DependencyProperty InnerSizeProperty;
-
 		public static readonly DependencyProperty PointsPropery;
+		
+		public static readonly DependencyProperty InnerSizeProperty;
 		public static readonly DependencyProperty BackEffectVisibleProperty;
 		public static readonly DependencyProperty MessageProperty;
 
