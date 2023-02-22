@@ -10,9 +10,8 @@
 				Width="800"
 				FontSize='22'>
 	<StackPanel>
-		
-		<TabControl x:Name='tabControl'
-								Height='100'>
+
+		<TabControl x:Name='tabControl'>
 			<TabItem Header='Alien Cards'>
 				<StackPanel Background='#FFE5E5E5'>
 					<Button x:Name='StarButton'
@@ -29,9 +28,9 @@
 										 Text='TextBlock' />
 					<TextBox x:Name='textBox'
 									 TextWrapping='Wrap'
-									 Text='Example' />
+									 Text='Enter your card name' />
 				</StackPanel>
-				
+
 			</TabItem>
 			<TabItem Header='Monster Cards'>
 				<Grid Background='#FFE5E5E5' />
