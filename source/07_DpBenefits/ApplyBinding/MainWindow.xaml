@@ -16,7 +16,7 @@
 			<Shapes:Star Margin='9'
 									 Points='2'  x:Name='CodeStar'/>
 			<Shapes:Star  Margin='9'
-										Points='{Binding ElementName=BindSlider, Path=Value}'
+										
 										x:Name='BindingStar' 
 										
 										/>
