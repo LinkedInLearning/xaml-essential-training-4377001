@@ -31,6 +31,7 @@
 							Maximum='10'
 							Margin='3'
 							ValueChanged='CodeSlider_ValueChanged' />
+			
 			<Slider Minimum='2'
 							x:Name='BindSlider'
 							Maximum='10'
