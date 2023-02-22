@@ -8,7 +8,7 @@
 				mc:Ignorable="d"
 				Title="ManyStars"
 				Height="600"
-				Width="700" >
+				Width="700" FontSize='44' >
 	<StackPanel>
 		<TextBlock Text='A grid filled with shapes'
 							 Margin='20,10'></TextBlock>

@@ -10,11 +10,32 @@
 				Width="800"
 				FontSize='22'>
 	<StackPanel>
-		<Button Content='With Rectangles'
-						x:Name='RectButton'
-						Click='RectButton_Click' />
-		<Button x:Name='StarButton'
-						Content='With Star'
-						Click='StarButton_Click' />
+		
+		<TabControl x:Name='tabControl'
+								Height='100'>
+			<TabItem Header='Alien Cards'>
+				<StackPanel Background='#FFE5E5E5'>
+					<Button x:Name='StarButton'
+									Content='With Star'
+									Click='StarButton_Click' />
+					<Button x:Name='button'
+									Content='Button' />
+					<CheckBox x:Name='checkBox'
+										Content='CheckBox' />
+					<RadioButton x:Name='radioButton'
+											 Content='RadioButton' />
+					<TextBlock x:Name='textBlock'
+										 TextWrapping='Wrap'
+										 Text='TextBlock' />
+					<TextBox x:Name='textBox'
+									 TextWrapping='Wrap'
+									 Text='Example' />
+				</StackPanel>
+				
+			</TabItem>
+			<TabItem Header='Monster Cards'>
+				<Grid Background='#FFE5E5E5' />
+			</TabItem>
+		</TabControl>
 	</StackPanel>
 </Window>
