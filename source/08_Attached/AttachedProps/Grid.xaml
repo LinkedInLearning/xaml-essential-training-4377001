@@ -1,0 +1,31 @@
+﻿<Window x:Class="AttachedProps.GridExample"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:AttachedProps"
+				mc:Ignorable="d"
+				Title="GridExample"
+				Height="450"
+				Width="600" FontSize='22'>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height='30*' />
+			<RowDefinition Height='40*' />
+			<RowDefinition Height='30*' />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width='30*' />
+			<ColumnDefinition Width='40*' />
+			<ColumnDefinition Width='30*' />
+		</Grid.ColumnDefinitions>
+		<Ellipse x:Name='Circle1' Height='Auto'
+						 Width='Auto'
+						 Fill='Orange'
+						 Stroke='DarkOrange'
+						 StrokeThickness='3' />
+		<Button Content='Move in Code'
+						x:Name='MoveButton' Grid.Column='1' Grid.Row='2'
+						Click='MoveButton_Click' />
+	</Grid>
+</Window>

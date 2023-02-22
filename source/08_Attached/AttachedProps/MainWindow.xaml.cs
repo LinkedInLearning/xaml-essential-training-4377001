@@ -35,5 +35,9 @@ namespace AttachedProps {
 		private void TooltipButton_Click(object sender, RoutedEventArgs e) {
 			(new TooltipExample()).Show();
 		}
-	}
+
+		private void GridButton_Click(object sender, RoutedEventArgs e) {
+			(new GridExample()).Show();
+		}
+    }
 }

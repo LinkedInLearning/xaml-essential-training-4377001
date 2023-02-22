@@ -16,6 +16,9 @@
 		<Button x:Name='TooltipButton'
 						Content='ToolTip Services'
 						Click='TooltipButton_Click' />
+		<Button x:Name='GridButton'
+						Content='Grid'
+						Click='GridButton_Click' />
 
 	</StackPanel>
 </Window>
