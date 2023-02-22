@@ -8,13 +8,16 @@ namespace AttachedProps
 {
 	public class PolarPanel : Panel
 	{
-		/// original idea from Silverlight community
+
 
 		/// <summary>
+		/// 
 		/// Gets or sets a value indicating 
 		/// whether Angle 0 is considered to be the
 		/// X axis (to the right), or Y axis 
 		/// (to the top).
+		/// 
+		/// original idea from Silverlight community
 		/// <para>
 		/// Note that this property is not 
 		/// bindable, as it is not
@@ -148,9 +151,6 @@ namespace AttachedProps
 		}
 
 
-
-
-
 		#region Constructors
 		/// <summary>
 		/// Initializes a new instance 
@@ -158,9 +158,6 @@ namespace AttachedProps
 		/// </summary>
 		public PolarPanel() { }
 		#endregion
-
-
-
 
 		#region MethodOverrides
 		/// <summary>
