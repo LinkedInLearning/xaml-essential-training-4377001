@@ -1,0 +1,71 @@
+﻿<Window x:Class="ShowTypeConverters.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:ShowTypeConverters"
+				mc:Ignorable="d"
+				Title="MainWindow"
+				Height="450"
+				Width="800"
+				FontSize='22'
+				WindowState='Maximized'>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width='10*' />
+			<ColumnDefinition Width='10*' />
+			<ColumnDefinition Width='10*' />
+			<ColumnDefinition Width='10*' />
+		</Grid.ColumnDefinitions>
+
+		<ListBox x:Name='BasicConvertersListBox'
+						 ItemsSource='{Binding}'
+						 SelectionChanged='ListBox_SelectionChanged'
+						 Grid.Column='0'>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation='Horizontal'>
+						<TextBlock Text='{Binding }' />
+						<TextBlock Foreground='DarkGray'
+											 Text='Converter' />
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		<ListBox x:Name='TypeConvertersListBox'
+						 ItemsSource='{Binding}'
+						 SelectionChanged='ListBox_SelectionChanged'
+						 Grid.Column='1'>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation='Horizontal'>
+						<TextBlock Text='{Binding }' />
+						<TextBlock Foreground='DarkGray'
+											 Text='Converter' />
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+	
+
+		<ListBox x:Name='BrushConvertersListBox'
+						 ItemsSource='{Binding}'
+						 SelectionChanged='ListBox_SelectionChanged'
+						 Grid.Column='2'>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation='Horizontal'>
+						<TextBlock Text='{Binding }' />
+						<TextBlock Foreground='DarkGray'
+											 Text='Converter' />
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		<ListBox x:Name='ShowListBox'
+						 Grid.Column='3'  MinHeight='200' MinWidth='20'>
+
+		</ListBox>
+	</Grid>
+</Window>
