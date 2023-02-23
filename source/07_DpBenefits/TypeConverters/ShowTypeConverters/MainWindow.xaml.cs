@@ -29,9 +29,6 @@ namespace ShowTypeConverters {
 			Type t3 = typeof(System.Windows.FontSizeConverter);
 			var assembly3 = t3.Assembly;
 
-		//	var assembly2 = Assembly.Load("PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken= 31bf3856ad364e35");
-
-
 
 			var q1 = from type in assembly1.GetTypes()
 							where type.IsSubclassOf(typeof(System.ComponentModel.TypeConverter))
@@ -45,8 +42,6 @@ namespace ShowTypeConverters {
 							 orderby type.Name
 							 let ShortName = type.Name.Remove(type.Name.LastIndexOf("Converter"))
 							 select ShortName; ;
-
-
 
 			var q3 = from type in assembly3.GetTypes()
 							 where type.IsSubclassOf(typeof(System.ComponentModel.TypeConverter))

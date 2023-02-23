@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhyTypeConverters", "WhyTyp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowTypeConverters", "ShowTypeConverters\ShowTypeConverters.csproj", "{9360BA9C-329A-4DEB-8631-3C79D66850E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateCustom", "CreateCustom\CreateCustom.csproj", "{58CD7FF3-5B66-48D5-9C1C-4110D47E107C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9360BA9C-329A-4DEB-8631-3C79D66850E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9360BA9C-329A-4DEB-8631-3C79D66850E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9360BA9C-329A-4DEB-8631-3C79D66850E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58CD7FF3-5B66-48D5-9C1C-4110D47E107C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CD7FF3-5B66-48D5-9C1C-4110D47E107C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CD7FF3-5B66-48D5-9C1C-4110D47E107C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CD7FF3-5B66-48D5-9C1C-4110D47E107C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
