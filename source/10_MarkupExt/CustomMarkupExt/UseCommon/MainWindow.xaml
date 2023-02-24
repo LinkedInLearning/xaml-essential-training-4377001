@@ -56,16 +56,8 @@
 				 Binding, TemplateBinding 
          Static,   -->
 
-	<Grid x:Name='MainGrid'>
-		<Grid.Background>
-			<SolidColorBrush Color='{DynamicResource {x:Static SystemColors.HighlightBrush }}'></SolidColorBrush>
-			<!--<LinearGradientBrush EndPoint='0.5,1'
-													 StartPoint='0.5,0'>
-				<GradientStop Color='Black' />
-				<GradientStop 
-											Offset='1' />
-			</LinearGradientBrush>-->
-		</Grid.Background>
+	<Grid x:Name='MainGrid' Background='{x:Static SystemColors.HighlightBrush}'>
+
 
 		<Line Y2='50'
 					Style='{StaticResource Left}' />

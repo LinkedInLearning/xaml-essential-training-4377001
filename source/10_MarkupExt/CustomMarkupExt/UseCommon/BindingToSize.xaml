@@ -9,21 +9,30 @@
 				Height="450"
 				Width="800">
 	<Window.Resources>
-
+		<LinearGradientBrush x:Key='SunsetBrush'
+												 EndPoint='0.5,1'
+												 StartPoint='0.5,0'>
+			<GradientStop Color='#FFE2E42E'
+										Offset='0' />
+			<GradientStop Color='#FF11D37C'
+										Offset='1' />
+			<GradientStop Color='#FFEDB118'
+										Offset='0.497' />
+		</LinearGradientBrush>
 		<Style TargetType='Line'
 					 x:Key='Left'>
 			<Setter Property='StrokeThickness'
-							Value='5' />
+							Value='7' />
 			<Setter Property='Stroke'
-							Value='CadetBlue' />
+							Value='{StaticResource SunsetBrush}' />
 			<Setter Property='X1'
 							Value='0' />
 			<Setter Property='Y1'
 							Value='50' />
-			<!--<Setter Property='X2'
-							Value='300' />-->
 			<Setter Property='X2'
-							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />
+							Value='300' />
+			<!--<Setter Property='X2'
+							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />-->
 
 		</Style>
 
@@ -32,7 +41,7 @@
 			<Setter Property='StrokeThickness'
 							Value='05' />
 			<Setter Property='Stroke'
-							Value='Orange' />
+							Value='{DynamicResource SunsetBrush}' />
 	
 			<Setter Property='Y1'
 							Value='50' />
@@ -40,11 +49,12 @@
 							Value='0' />
 			<Setter Property='X1'
 							Value='300' />
-			<Setter Property='X1'
-							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />
+			<!--<Setter Property='X1'
+							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />-->
 		</Style>
 	</Window.Resources>
-	<Grid x:Name='MainGrid'>
+	<Grid x:Name='MainGrid'
+				Background='{StaticResource {x:Static SystemColors.ActiveBorderBrushKey}}'>
 		<Line Y2='50'
 					Style='{StaticResource Left}' />
 		<Line Y2='90'
