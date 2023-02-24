@@ -61,8 +61,7 @@
 	
 	<!-- the most common markup extensions
 				 StaticResource, DynamicResource 
-				 Binding, TemplateBinding 
-         Static,   -->
+				 Binding, Static,   -->
 
 	<Grid x:Name='MainGrid'
 				Background='LightSlateGray'>
