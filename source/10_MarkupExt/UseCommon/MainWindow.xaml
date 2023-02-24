@@ -1,11 +1,14 @@
 ﻿<Window x:Class="UseCommon.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UseCommon"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize='22'>
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:UseCommon"
+				mc:Ignorable="d"
+				Title="MainWindow"
+				Height="450"
+				Width="500"
+				FontSize='22'>
 	<Window.Resources>
 		<LinearGradientBrush x:Key='SunsetBrush'
 												 EndPoint='0.5,1'
@@ -17,12 +20,19 @@
 			<GradientStop Color='#FFEDB118'
 										Offset='0.497' />
 		</LinearGradientBrush>
-		<Style TargetType='Line'
-					 x:Key='Left'>
+		
+		<Style  x:Key='Line-All'
+						TargetType='Line'>
 			<Setter Property='StrokeThickness'
 							Value='7' />
 			<Setter Property='Stroke'
 							Value='{StaticResource SunsetBrush}' />
+		</Style>
+		
+		<Style x:Key='Line-Left'
+					 TargetType='Line'
+					 BasedOn='{StaticResource Line-All}'>
+
 			<Setter Property='X1'
 							Value='0' />
 			<Setter Property='Y1'
@@ -34,12 +44,9 @@
 
 		</Style>
 
-		<Style TargetType='Line'
-					 x:Key='Right'>
-			<Setter Property='StrokeThickness'
-							Value='05' />
-			<Setter Property='Stroke'
-							Value='{DynamicResource SunsetBrush}' />
+		<Style  x:Key='Line-Right'
+						TargetType='Line'
+						BasedOn='{StaticResource Line-All}'>
 
 			<Setter Property='Y1'
 							Value='50' />
@@ -51,39 +58,40 @@
 							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />-->
 		</Style>
 	</Window.Resources>
+	
 	<!-- the most common markup extensions
 				 StaticResource, DynamicResource 
 				 Binding, TemplateBinding 
          Static,   -->
 
-	<Grid x:Name='MainGrid' Background='LightSlateGray'>
-
-
-		<Line Y2='50'
-					Style='{StaticResource Left}' />
-		<Line Y2='90'
-					Style='{StaticResource Left}' />
-		<Line Y2='130'
-					Style='{StaticResource Left}' />
-		<Line Y2='170'
-					Style='{StaticResource Left}' />
-		<Line Y2='210'
-					Style='{StaticResource Left}' />
-		<Line Y2='250'
-					Style='{StaticResource Left}' />
+	<Grid x:Name='MainGrid'
+				Background='LightSlateGray'>
 
 		<Line Y2='50'
-					Style='{StaticResource Right}' />
+					Style='{StaticResource Line-Left}' />
 		<Line Y2='90'
-					Style='{StaticResource Right}' />
+					Style='{StaticResource Line-Left}' />
 		<Line Y2='130'
-					Style='{StaticResource Right}' />
+					Style='{StaticResource Line-Left}' />
 		<Line Y2='170'
-					Style='{StaticResource Right}' />
+					Style='{StaticResource Line-Left}' />
 		<Line Y2='210'
-					Style='{StaticResource Right}' />
+					Style='{StaticResource Line-Left}' />
 		<Line Y2='250'
-					Style='{StaticResource Right}' />
+					Style='{StaticResource Line-Left}' />
+
+		<Line Y2='50'
+					Style='{StaticResource Line-Right}' />
+		<Line Y2='90'
+					Style='{StaticResource Line-Right}' />
+		<Line Y2='130'
+					Style='{StaticResource Line-Right}' />
+		<Line Y2='170'
+					Style='{StaticResource Line-Right}' />
+		<Line Y2='210'
+					Style='{StaticResource Line-Right}' />
+		<Line Y2='250'
+					Style='{StaticResource Line-Right}' />
 
 	</Grid>
 
