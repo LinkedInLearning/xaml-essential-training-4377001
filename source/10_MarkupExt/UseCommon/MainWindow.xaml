@@ -37,10 +37,10 @@
 							Value='0' />
 			<Setter Property='Y1'
 							Value='50' />
-			<!--<Setter Property='X2'
-							Value='450' />-->
 			<Setter Property='X2'
-							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />
+							Value='300' />
+			<!--<Setter Property='X2'
+							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />-->
 
 		</Style>
 
@@ -52,10 +52,10 @@
 							Value='50' />
 			<Setter Property='X2'
 							Value='0' />
-			<!--<Setter Property='X1'
-							Value='300' />-->
 			<Setter Property='X1'
-							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />
+							Value='300' />
+			<!--<Setter Property='X1'
+							Value='{Binding ElementName=MainGrid, Path=ActualWidth}' />-->
 		</Style>
 	</Window.Resources>
 	
@@ -64,7 +64,7 @@
 				 Binding, Static,   -->
 
 	<Grid x:Name='MainGrid'
-				Background='{x:Static SystemColors.HighlightBrush}'>
+				Background='LightSlateGray'>
 
 		<Line Y2='50'
 					Style='{DynamicResource Line-Left}' />
