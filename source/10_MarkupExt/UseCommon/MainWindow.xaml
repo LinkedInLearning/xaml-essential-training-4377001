@@ -56,7 +56,7 @@
 				 Binding, TemplateBinding 
          Static,   -->
 
-	<Grid x:Name='MainGrid' Background='{x:Static SystemColors.HighlightBrush}'>
+	<Grid x:Name='MainGrid' Background='LightSlateGray'>
 
 
 		<Line Y2='50'
