@@ -5,11 +5,11 @@ using System.Windows.Media;
 namespace AddProperties {
 
 	[MarkupExtensionReturnType(typeof(Brush))]
-	internal class RelativeColor : MarkupExtension {
+	internal class RelativeColorBrushExtension : MarkupExtension {
 		private Color _color = Colors.Orange;
 		private ColorAction _colorAction = ColorAction.Normal;
 
-		public RelativeColor() { }
+		public RelativeColorBrushExtension() { }
 
 		public Color Color
 		{
