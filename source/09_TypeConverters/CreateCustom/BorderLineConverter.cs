@@ -70,6 +70,9 @@ namespace CreateCustom
 			return base.ConvertFrom(context, culture, value);
 		}
 
+
+		// We don't care about converting from BorderLine
+		// to any other type
 		public override bool CanConvertTo(ITypeDescriptorContext context, Type destinationType) {
 			return base.CanConvertTo(context, destinationType);
 		}

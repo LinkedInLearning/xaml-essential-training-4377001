@@ -29,9 +29,9 @@ namespace CreateCustom.Controls {
 		// should use Dependency Properties 
 
 		// For simplification, this example uses .NET properties only
-		public string HeaderText { get; set; }
-		public int StarCount { get; set; }
-		public double UserRating { get; set; }
+		public System.String HeaderText { get; set; }
+		public System.Int32 StarCount { get; set; }
+		public System.Double UserRating { get; set; }
 		public Brush StarBackground { get; set; }
 		public Brush StarStroke { get; set; }
 		public BorderLine StarBorder

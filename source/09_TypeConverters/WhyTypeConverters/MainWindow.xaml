@@ -1,12 +1,24 @@
-﻿<Window xmlns:Controls="clr-namespace:WhyTypeConverters.Controls"  x:Class="WhyTypeConverters.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WhyTypeConverters"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600" FontSize='22'>
-    <Grid>
-<Controls:Rating  x:Name='currentRating' MouseEnter='currentRating_MouseEnter'/>
-    </Grid>
+﻿<Window xmlns:mycontrols="clr-namespace:WhyTypeConverters.Controls"
+				x:Class="WhyTypeConverters.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				Title="MainWindow"
+				Height="450"
+				Width="600"
+				FontSize='22'>
+	<Grid>
+		<TextBox Text='Hello'
+						 IsReadOnly='True'
+						 Padding='10,15' />
+
+		<mycontrols:Rating HeaderText='How was your shopping experience?'
+											 StarCount='5'
+											 UserRating='3.5'
+											 StarBackground='Orange'
+											 StarStroke='Red' 
+											 
+											 />
+
+		<!--StarBorder='3'-->
+	</Grid>
 </Window>
