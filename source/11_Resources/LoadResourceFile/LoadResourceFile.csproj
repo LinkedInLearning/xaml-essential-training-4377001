@@ -13,6 +13,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="Merged\BrushResources.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Merged\BrushResources.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\Aliens-Group.png" />
     <Resource Include="Images\Monster-Group.png" />
   </ItemGroup>
