@@ -5,22 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommonResources"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize='22'>
 	<Window.Resources>
 		<SolidColorBrush x:Key='MainBrush'
 										 Color='Pink' />
 		<SolidColorBrush x:Key='AccentBrush'
 										 Color='LightSalmon' />
-
+		<Style TargetType='Button'>
+			<Setter Property='Margin'
+							Value='20,5' />
+		</Style>
 	</Window.Resources>
 	<StackPanel>
-		<Button Content='Show Styles Window'
+		<Button Content='Style Resources'
 						Click='StyleButton_Click'
 						x:Name='StyleButton' />
-		<Button Content='Show Color Window'
+		<Button Content='Color Resources'
 						Click='ColorButton_Click'
 						x:Name='ColorButton' />
-		<Button Content='Show Data Window'
+		<Button Content='Data Resource'
 						Click='DataButton_Click'
 						x:Name='DataButton' />
 	</StackPanel>

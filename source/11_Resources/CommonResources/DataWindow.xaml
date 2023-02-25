@@ -10,9 +10,12 @@
   <Window.Resources>
     <Models:Trees x:Key='trees' />
     <DataTemplate x:Key='treeTemplate'>
-      <StackPanel>
-        <TextBlock Text='{Binding TreeName}' />
-      </StackPanel>
+      <StackPanel Orientation='Horizontal'>
+     
+				<Rectangle Fill='ForestGreen'
+									 Height='{Binding MaxHeight}' Width='12'  Margin='20'/>
+				<TextBlock Text='{Binding TreeName}' VerticalAlignment='Center' />
+			</StackPanel>
     </DataTemplate> 
   </Window.Resources>
     <Grid>
