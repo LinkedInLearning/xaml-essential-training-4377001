@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+										xmlns:local="clr-namespace:UseMergedResource">
+
+	<ResourceDictionary.MergedDictionaries>
+		<!-- When ResourceDictionary has Build Action = Page
+				     use the short URI syntax -->
+		<ResourceDictionary Source='/Merged/BrushResources.xaml' />
+		<!-- For more complex scenarios, consider the full PACK URI syntax -->
+		
+		  <!-- a pack URI starts with pack:// prefix
+		
+		       next is the 'authority' URI, another URI within the pack URI
+		       Can be either application:/// or siteoforigin:///  -->
+
+		<!-- Full Pack URI version of line 8 above. -->
+		<ResourceDictionary Source='pack://application:,,,/Merged/ControlResources.xaml' />
+		
+		<!-- siteoforigin is useful for loading any content file in the application deployment folder/subfolder -->
+		<ResourceDictionary Source='pack://siteoforigin:,,,/Merged/ImageResources.xaml' />
+	</ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

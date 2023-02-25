@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Aliens-Group.png" />
+    <None Remove="Images\Monster-Group.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Merged\BrushResources.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Merged\BrushResources.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Aliens-Group.png" />
+    <Resource Include="Images\Monster-Group.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="UseMergedResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UseMergedResources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<StackPanel>
+		<Rectangle Width='200'
+							 Height='100'
+							 Fill='{StaticResource PrimaryBrush}'>
+
+		</Rectangle>
+
+		<Ellipse Width='200'
+						 Height='100'
+						 Fill='{StaticResource AccentBrush}' />
+		<Image Height='240' />
+	</StackPanel>
+</Window>

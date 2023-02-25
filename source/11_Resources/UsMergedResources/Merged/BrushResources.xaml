@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<!-- Location for application brushes -->
+	<SolidColorBrush x:Key='BorderBrush'
+									 Color='Orange' />
+	<SolidColorBrush x:Key='HighLightBrush'
+									 Color='LightBlue' />
+	<SolidColorBrush x:Key='PrimaryBrush'
+									 Color='Pink' />
+	<SolidColorBrush x:Key='AccentBrush'
+									 Color='Yellow' />
+
+</ResourceDictionary>

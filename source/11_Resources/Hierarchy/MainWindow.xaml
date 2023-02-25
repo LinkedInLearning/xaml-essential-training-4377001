@@ -1,0 +1,31 @@
+﻿<Window x:Class="Hierarchy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hierarchy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid>
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height='1*' />
+			<RowDefinition Height='1*' />
+			<RowDefinition Height='2*' />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width='1*' />
+			<ColumnDefinition Width='3*' />
+		</Grid.ColumnDefinitions>
+		<StackPanel>
+
+			<!--<Rectangle Width='120'
+								 Height='50'
+								 Fill='{StaticResource MainBrush}' />
+
+			<Ellipse Width='120'
+							 Height='50'
+							 Fill='{StaticResource AccentBrush}' />-->
+		</StackPanel>
+	</Grid>
+</Window>
