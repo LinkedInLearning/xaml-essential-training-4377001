@@ -23,7 +23,11 @@
     <SolidColorBrush x:Key='AccentBrush'
                      Color='Lavender' />
 
-  </Window.Resources>
+		<!-- not a great name! -->
+		<SolidColorBrush x:Key='GreenBrush'
+										 Color='Green' />
+
+	</Window.Resources>
   <StackPanel>
     <Rectangle Width='200'
                Height='100'
