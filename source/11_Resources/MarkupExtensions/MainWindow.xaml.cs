@@ -28,6 +28,7 @@ namespace MarkupExtensions {
 			dictionary.Add(key: "MainBrush", value: new SolidColorBrush(Colors.Lavender));
 			dictionary.Add(key: "AccentBrush", value: new SolidColorBrush(Colors.Gold));
 			this.Resources = dictionary;
-		}
+			MessageTextBlock.Text = "Dictionary replaced..."
+;		}
 	}
 }

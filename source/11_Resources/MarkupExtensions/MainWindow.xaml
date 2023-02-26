@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MarkupExtensions"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize='22'>
 	<Window.Resources>
 		<SolidColorBrush x:Key='MainBrush'
 										 Color='Pink' />
@@ -16,15 +16,20 @@
 	<StackPanel>
 		<Rectangle Width='200'
 							 Height='100'
-							 Fill='Gray'>
+							 Fill='{StaticResource AccentBrush}'>
 
 		</Rectangle>
 
 		<Ellipse Width='200'
 						 Height='100'
-						 Fill='LightGray' />
+						 Fill='{StaticResource MainBrush}' />
 		<Button x:Name='ChangeResource'
 						Content='Change Resource'
-						Click='ChangeResource_Click' />
+						Click='ChangeResource_Click' Margin='20' />
+
+		<TextBlock x:Name='MessageTextBlock'
+						Text=''
+						
+						Margin='20' />
 	</StackPanel>
 </Window>
