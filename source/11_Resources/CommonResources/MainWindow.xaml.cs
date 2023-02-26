@@ -33,5 +33,8 @@ namespace CommonResources {
 			(new ColorWindow()).Show();
 		}
 
-	}
+		private void DataTemplateButton_Click(object sender, RoutedEventArgs e) {
+			(new DataTemplateWindow()).Show();
+		}
+    }
 }

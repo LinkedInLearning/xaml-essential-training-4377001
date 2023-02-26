@@ -26,5 +26,8 @@
 		<Button Content='Data Resource'
 						Click='DataButton_Click'
 						x:Name='DataButton' />
+		<Button Content='Data Template Resource'
+						Click='DataTemplateButton_Click'
+						x:Name='DataTemplateButton' />
 	</StackPanel>
 </Window>

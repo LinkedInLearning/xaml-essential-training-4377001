@@ -1,26 +1,21 @@
 ﻿<Window x:Class="CommonResources.Done.DataWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CommonResources"
-        mc:Ignorable="d"
-        xmlns:Models ='clr-namespace:Models'
-        Title="DataWindow" Height="600" Width="300">
-  <Window.Resources>
-    <Models:Trees x:Key='trees' />
-    <DataTemplate x:Key='treeTemplate'>
-      <StackPanel Orientation='Horizontal'>
-     
-				<Rectangle Fill='ForestGreen'
-									 Height='{Binding MaxHeight}' Width='12'  Margin='20'/>
-				<TextBlock Text='{Binding TreeName}' VerticalAlignment='Center' />
-			</StackPanel>
-    </DataTemplate> 
-  </Window.Resources>
-    <Grid>
-    <ListBox DataContext='{StaticResource trees}' ItemsSource='{Binding}'
-             ItemTemplate='{StaticResource treeTemplate}'
-             />
-  </Grid>
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				xmlns:local="clr-namespace:CommonResources"
+				mc:Ignorable="d"
+				xmlns:Models='clr-namespace:Models'
+				Title="DataWindow"
+				Height="600"
+				Width="300">
+	<Window.Resources>
+		<Models:Trees x:Key='trees' />
+	
+		
+	</Window.Resources>
+	<Grid>
+		<ListBox DataContext='{StaticResource trees}'
+						 ItemsSource='{Binding}' />
+	</Grid>
 </Window>
