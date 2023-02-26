@@ -8,7 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Shazzaml-Shader-Editor-Examples\" />
+    <None Remove="Images\Aliens-Group.png" />
+    <None Remove="Images\Monster-Group.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Aliens-Group.png" />
+    <Resource Include="Images\Monster-Group.png" />
   </ItemGroup>
 
 </Project>
