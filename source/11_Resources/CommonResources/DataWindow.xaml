@@ -8,7 +8,7 @@
         xmlns:Models ='clr-namespace:Models'
         Title="DataWindow" Height="600" Width="300">
   <Window.Resources>
-    <models
+  
   </Window.Resources>
     <Grid>
     <ListBox 
