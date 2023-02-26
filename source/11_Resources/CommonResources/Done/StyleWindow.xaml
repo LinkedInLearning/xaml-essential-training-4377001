@@ -16,7 +16,13 @@
               Value='24' />
       <Setter Property='FontWeight'
               Value='Bold' />
-    </Style>
+			<Setter Property='Cursor'
+							Value='Hand' />
+			<Setter Property='HorizontalAlignment'
+							Value='Right' />
+			<Setter Property='Foreground'
+							Value='Orange' />
+		</Style>
   </Window.Resources>
   <StackPanel>
     <TextBlock Text='Fir' />

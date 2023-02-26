@@ -13,14 +13,16 @@
     <Style x:Key='BigAndBold'
            TargetType='TextBlock'>
       <Setter Property='FontSize'
-              Value='24' />
-      <Setter Property='FontWeight'
-              Value='Bold' />
-    </Style>
+              Value='36' />
+			<Setter Property='Cursor'
+							Value='Hand' />
+
+
+		</Style>
   </Window.Resources>
   <StackPanel>
     <TextBlock Text='Fir' />
-    <TextBlock Text='Cedar' />
+    <TextBlock Text='Cedar'  />
     <TextBlock Text='Oak' />
     <TextBlock Text='Pine' />
   </StackPanel>
