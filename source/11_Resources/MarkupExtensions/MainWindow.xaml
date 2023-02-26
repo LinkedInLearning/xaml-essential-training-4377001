@@ -16,13 +16,15 @@
 	<StackPanel>
 		<Rectangle Width='200'
 							 Height='100'
-							 Fill='{StaticResource AccentBrush}'>
+							 Fill='Gray'>
 
 		</Rectangle>
 
 		<Ellipse Width='200'
 						 Height='100'
-						 Fill='{StaticResource MainBrush}' />
+						 Fill='Gray' />
+		
+		
 		<Button x:Name='ChangeResource'
 						Content='Change Resource'
 						Click='ChangeResource_Click' Margin='20' />
