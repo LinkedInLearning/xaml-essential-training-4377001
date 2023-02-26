@@ -11,8 +11,13 @@
         Width="300">
   <Window.Resources>
     <Color x:Key="Brown">#FFC4AF8D</Color>
-    <Color x:Key="RelaxedGreen">#FFAFC49D</Color>
-    <SolidColorBrush x:Key='MainBrush'
+		<Color x:Key="RelaxedGreen"
+					 A='255'
+					 R='175'
+					 G='196'
+					 B='157' />
+
+		<SolidColorBrush x:Key='MainBrush'
                      Color='{StaticResource Brown}' />
     <SolidColorBrush x:Key='AccentBrush'
                      Color='{StaticResource RelaxedGreen}' />
