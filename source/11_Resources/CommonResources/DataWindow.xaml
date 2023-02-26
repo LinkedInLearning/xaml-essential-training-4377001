@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CommonResources"
         mc:Ignorable="d"
         xmlns:Models ='clr-namespace:Models'
-        Title="DataWindow" Height="300" Width="300">
+        Title="DataWindow" Height="600" Width="300">
   <Window.Resources>
     <Models:Trees x:Key='trees' />
     <DataTemplate x:Key='treeTemplate'>

@@ -1,4 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
+   
+	<!-- Put all shared resources in one resource dictionary file.
+	     Merge this file into every company XAML application.
+	-->
 </ResourceDictionary>
