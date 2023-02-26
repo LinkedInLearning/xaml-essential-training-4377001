@@ -26,8 +26,9 @@
   </Window.Resources>
   <StackPanel>
     <TextBlock Text='Fir' />
-    <TextBlock Text='Cedar' />
+    <TextBlock Text='Cedar'  Style='{StaticResource BigAndBold}'/>
     <TextBlock Text='Oak' />
-    <TextBlock Text='Pine' />
+		<TextBlock Text='Pine'
+							 Style='{StaticResource BigAndBold}' />
   </StackPanel>
 </Window> 
