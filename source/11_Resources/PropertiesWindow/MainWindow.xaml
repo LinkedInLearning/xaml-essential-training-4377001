@@ -27,8 +27,7 @@
 						 StrokeThickness='18'
 						 Stroke='{StaticResource AccentBrush}'
 						 Fill='{StaticResource PrimaryBrush}' />
-		<TextBlock Text='Hello' />
-		<TextBlock Text='Goodbye' />
+	
 	</UniformGrid>
 	
 		
