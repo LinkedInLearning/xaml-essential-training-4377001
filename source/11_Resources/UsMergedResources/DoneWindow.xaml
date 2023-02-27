@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:UseMergedResources"
         mc:Ignorable="d"
         Title="DoneWindow" Height="800" Width="800">
-	<Window.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-
-				<ResourceDictionary Source='Merged/Brushes.xaml' />
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Window.Resources>
+	
 	<UniformGrid Columns='2'>
+		<Ellipse Width='200'
+						 Height='200'
+						 Fill='{StaticResource AccentBrush}' />
+
+		<Ellipse Width='200'
+						 Height='200'
+						 Fill='{StaticResource BorderBrush}' />
 		<Ellipse Width='200'
 						 Height='200'
 						 Fill='{StaticResource CircularAnimationIconBrush}' />
@@ -22,15 +22,10 @@
 		<Ellipse Width='200'
 						 Height='200'
 						 Fill='{StaticResource HorizontalAnimationIconBrush}' />
-		<Ellipse Width='200'
-						 Height='200'
-						 Fill='{StaticResource AccentBrush}' />
-
-		<Ellipse Width='200'
-						 Height='200'
-						 Fill='{StaticResource PrimaryBrush}' />
-		<Image Height='240' />
-		<Image Height='240' />
+		<Image Height='240'
+					 Source='{StaticResource AlienGroup}' />
+		<Image Height='240'
+					 Source='{StaticResource MonsterGroup}' />
 
 	</UniformGrid>
 </Window>
