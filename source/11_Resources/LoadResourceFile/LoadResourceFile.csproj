@@ -8,24 +8,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Aliens-Group.png" />
+    <None Remove="Images\Alien-Group.png" />
     <None Remove="Images\Monster-Group.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Remove="Merged\BrushResources.xaml" />
+    <Page Remove="Merged\ImageResources.xaml" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Merged\BrushResources.xaml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
       <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Content>
+    <Content Include="Merged\ImageResources.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Aliens-Group.png" />
+    <Resource Include="Images\Alien-Group.png" />
     <Resource Include="Images\Monster-Group.png" />
   </ItemGroup>
 
