@@ -4,9 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommonResources"
-        mc:Ignorable="d"
-        Title="DataTemplateWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+				xmlns:models='clr-namespace:Models'
+				mc:Ignorable="d"
+				Title="DataTemplateWindow"
+				Height="450"
+				Width="800"
+				FontSize='22'>
+	<Window.Resources>
+		<models:Trees x:Key='trees' />
+
+	</Window.Resources>
+	<Grid>
+		<ListBox DataContext='{StaticResource trees}'
+						 ItemsSource='{Binding}' />
+	</Grid>
 </Window>

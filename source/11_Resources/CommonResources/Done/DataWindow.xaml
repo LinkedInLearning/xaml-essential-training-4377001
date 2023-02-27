@@ -5,12 +5,12 @@
 				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 				xmlns:local="clr-namespace:CommonResources"
 				mc:Ignorable="d"
-				xmlns:Models='clr-namespace:Models'
+				xmlns:models='clr-namespace:Models'
 				Title="DataWindow"
 				Height="600"
 				Width="300">
 	<Window.Resources>
-		<Models:Trees x:Key='trees' />
+		<models:Trees x:Key='trees' />
 	
 		
 	</Window.Resources>
