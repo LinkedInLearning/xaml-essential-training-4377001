@@ -6,19 +6,31 @@
 				xmlns:local="clr-namespace:PropertiesWindow"
 				mc:Ignorable="d"
 				Title="MainWindow"
-				Height="450"
+				Height="600"
 				Width="600">
 	<Window.Resources>
-		<ImageBrush x:Key='EllipseFill1' ImageSource='/Images/Monster-Group.png' TileMode='FlipX'/>
+		<SolidColorBrush x:Key='PrimaryBrush'
+										 Color='Pink' />
+		<SolidColorBrush x:Key='AccentBrush'
+										 Color='Orchid' />
 	</Window.Resources>
-	<StackPanel>
+
+	<UniformGrid Columns='2' Rows='2'>
 		<Ellipse Width='200'
-						 Height='120'
-						 Fill='{DynamicResource EllipseFill1}' />
-		<Ellipse Fill='{DynamicResource EllipseFill1}' Width='200'
-						 Height='120'>
-		</Ellipse>
+						 Height='200'
+						 StrokeThickness='12'
+						 Stroke='{StaticResource PrimaryBrush}'
+						 Fill='{StaticResource AccentBrush}' />
+
+		<Ellipse Width='200'
+						 Height='200'
+						 StrokeThickness='12'
+						 Stroke='{StaticResource AccentBrush}'
+						 Fill='{StaticResource PrimaryBrush}' />
 		<TextBlock Text='Hello' />
 		<TextBlock Text='Goodbye' />
-	</StackPanel>
+	</UniformGrid>
+	
+		
+	
 </Window>
