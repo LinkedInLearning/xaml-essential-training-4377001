@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Images\Aliens-Group.png" />
+    <None Remove="Images\Alien-Group.png" />
     <None Remove="Images\Monster-Group.png" />
   </ItemGroup>
 
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Aliens-Group.png" />
+    <Resource Include="Images\Alien-Group.png" />
     <Resource Include="Images\Monster-Group.png" />
     <Resource Include="Merged\BigStarAllResources.xaml" />
     <Resource Include="Merged\Brushes.xaml" />
