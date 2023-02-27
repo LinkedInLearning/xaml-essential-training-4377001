@@ -16,15 +16,15 @@
 	</Window.Resources>
 
 	<UniformGrid Columns='2' Rows='2'>
-		<Ellipse Width='200'
-						 Height='200'
-						 StrokeThickness='12'
+		<Ellipse Width='260'
+						 Height='260'
+						 StrokeThickness='18'
 						 Stroke='{StaticResource PrimaryBrush}'
 						 Fill='{StaticResource AccentBrush}' />
 
-		<Ellipse Width='200'
-						 Height='200'
-						 StrokeThickness='12'
+		<Ellipse Width='260'
+						 Height='260'
+						 StrokeThickness='18'
 						 Stroke='{StaticResource AccentBrush}'
 						 Fill='{StaticResource PrimaryBrush}' />
 		<TextBlock Text='Hello' />
