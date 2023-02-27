@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 	<Grid>
-
+		<Grid.Resources>
+			<SolidColorBrush x:Key='AccentBrush'
+											 Color='Orange' />
+		</Grid.Resources>
 		<Grid.RowDefinitions>
 			<RowDefinition Height='1*' />
 			<RowDefinition Height='1*' />
@@ -18,14 +21,18 @@
 			<ColumnDefinition Width='3*' />
 		</Grid.ColumnDefinitions>
 		<StackPanel>
+			<StackPanel.Resources>
+				<SolidColorBrush x:Key='MainBrush'
+												 Color='Red' />
+			</StackPanel.Resources>
 
-			<!--<Rectangle Width='120'
+			<Rectangle Width='120'
 								 Height='50'
 								 Fill='{StaticResource MainBrush}' />
 
 			<Ellipse Width='120'
 							 Height='50'
-							 Fill='{StaticResource AccentBrush}' />-->
+							 Fill='{StaticResource AccentBrush}' />
 		</StackPanel>
 	</Grid>
 </Window>

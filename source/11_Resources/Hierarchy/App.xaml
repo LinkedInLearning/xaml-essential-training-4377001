@@ -6,7 +6,7 @@
     <Application.Resources>
 		<!--<SolidColorBrush x:Key='MainBrush'
                      Color='Pink' />
-    <SolidColorBrush x:Key='AccentBrush'
-                     Color='LightSalmon' />-->
+		<SolidColorBrush x:Key='AccentBrush'
+										 Color='Orchid' />-->
 	</Application.Resources>
 </Application>
