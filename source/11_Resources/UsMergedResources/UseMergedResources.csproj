@@ -13,8 +13,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="Merged\BigStarAllResources.xaml" />
+    <Page Remove="Merged\Brushes.xaml" />
+    <Page Remove="Merged\Controls.xaml" />
+    <Page Remove="Merged\Images.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\Aliens-Group.png" />
     <Resource Include="Images\Monster-Group.png" />
+    <Resource Include="Merged\BigStarAllResources.xaml" />
+    <Resource Include="Merged\Brushes.xaml" />
+    <Resource Include="Merged\Controls.xaml" />
+    <Resource Include="Merged\Images.xaml" />
   </ItemGroup>
 
 </Project>

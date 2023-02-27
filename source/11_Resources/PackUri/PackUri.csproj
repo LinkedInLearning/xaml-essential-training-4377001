@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <Page Remove="Merged\BrushResources.xaml" />
-    <Page Remove="Merged\xImageResources.xaml" />
+    <Page Remove="Merged\ImageResources.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,7 +26,7 @@
   <ItemGroup>
     <Resource Include="Images\Aliens-Group.png" />
     <Resource Include="Images\Monster-Group.png" />
-    <Content Include="Merged\xImageResources.xaml">
+    <Content Include="Merged\ImageResources.xaml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
