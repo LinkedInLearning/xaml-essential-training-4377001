@@ -11,11 +11,11 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height='1*' />
 			<RowDefinition Height='1*' />
-			<RowDefinition Height='2*' />
+
 		</Grid.RowDefinitions>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition Width='1*' />
-			<ColumnDefinition Width='3*' />
+			<ColumnDefinition Width='2*' />
 		</Grid.ColumnDefinitions>
 		<StackPanel>
 
